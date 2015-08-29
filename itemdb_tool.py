@@ -1139,7 +1139,7 @@ class ItemDB:
     return db_data
 
 
-  def import_items(self, make_legacy=True, destructive=False, filter=None):
+  def import_items(self, make_legacy=True, destructive=False, filter=None, invert_filter=False):
     """
     Imports and updates HS items from the JSON-formatted data received on stdin.
     If make_legacy is true, any items marked for update or deletion which are in used by players
@@ -1147,9 +1147,11 @@ class ItemDB:
     If destructive is true, any item which is absent from the provided data will be converted to
     a legacy item, or deleted.
     If filter is set and is a valid regex, only items matching the expression will be imported.
+    If invert_filter is true, only items not matching the expression will be imported.
     """
     make_legacy = safe_bool(make_legacy)
     destructive = safe_bool(destructive)
+    invert_filter = safe_bool(invert_filter)
 
     item_filter = None
 
@@ -1220,7 +1222,7 @@ class ItemDB:
       if db_item_id is not None:
         updated_ids.append(db_item_id)
 
-      if item_filter is not None and not item_filter.match(item["name"]):
+      if item_filter is not None and (item_filter.match(item["name"]) if invert_filter else not item_filter.match(item["name"])):
         debug("Skipping filtered item: %s" % item["name"])
         skipped += 1
         continue
