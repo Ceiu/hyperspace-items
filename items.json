@@ -1,0 +1,6209 @@
+{
+  "items": [
+    {
+      "name": "Gamma Ray",
+      "short_description": "Basic weapon.",
+      "long_description": "An average yet versatile gun, for a low cost.",
+      "buy_price": 1000,
+      "sell_price": 750,
+      "exp_required": 0,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Gun": 1
+      },
+      "properties": {
+        "gunlevel": 2,
+        "bulletenergy": "=21",
+        "initialbounty": -1,
+        "bulletdelay": "=22",
+        "bounce": 1
+      },
+      "events": [],
+      "categories": {
+        "Guns": 1
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Gauss Cannon",
+      "short_description": "Multifire bullets.",
+      "long_description": "The spread on these guns makes it easier to be effective at a longer range.",
+      "buy_price": 9000,
+      "sell_price": 6750,
+      "exp_required": 100,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Gun": 1
+      },
+      "properties": {
+        "bulletenergy": "=20",
+        "initialbounty": -1,
+        "multifire": 1,
+        "multienergy": "=24",
+        "gunlevel": 2,
+        "multidelay": "=23",
+        "bulletdelay": "=23"
+      },
+      "events": [],
+      "categories": {
+        "Guns": 2
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Disruptor",
+      "short_description": "High level bullets.",
+      "long_description": "This gun's bullets are charged at a higher level and do more damage per hit.",
+      "buy_price": 12000,
+      "sell_price": 9000,
+      "exp_required": 250,
+      "ships_allowed": [
+        1,
+        3,
+        5
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Gun": 1
+      },
+      "properties": {
+        "gunlevel": 3,
+        "bulletenergy": "=22",
+        "bulletdelay": "=23"
+      },
+      "events": [],
+      "categories": {
+        "Guns": 3
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Shredder",
+      "short_description": "Highest rate of fire.",
+      "long_description": "Shredder can generate a lot of fire in a little time, but is generally more costly.",
+      "buy_price": 16000,
+      "sell_price": 12000,
+      "exp_required": 600,
+      "ships_allowed": [
+        1,
+        3,
+        5
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Gun": 1
+      },
+      "properties": {
+        "gunlevel": 1,
+        "bulletenergy": "=43",
+        "bulletdelay": "=9"
+      },
+      "events": [],
+      "categories": {
+        "Guns": 5
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Old Beam Array",
+      "short_description": "Deprecated.",
+      "long_description": "See ?iteminfo Beam Array",
+      "buy_price": 0,
+      "sell_price": 22000,
+      "exp_required": 1000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Gun": 1
+      },
+      "properties": {
+        "bulletenergy": "=48",
+        "initialbounty": -2,
+        "multifire": 1,
+        "multienergy": "=50",
+        "bounce": 1,
+        "gunlevel": 1,
+        "multidelay": "=27",
+        "bulletdelay": "=24"
+      },
+      "events": [],
+      "categories": {
+        "Hidden": 6
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Phaser",
+      "short_description": "Efficiency weapon.",
+      "long_description": "Phasers focus on raw effectiveness. It is only limited by its narrow and fragile bullet stream.",
+      "buy_price": 35000,
+      "sell_price": 26250,
+      "exp_required": 2000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Gun": 1
+      },
+      "properties": {
+        "gunlevel": 2,
+        "bulletenergy": "=28",
+        "bulletdelay": "=15"
+      },
+      "events": [],
+      "categories": {
+        "Guns": 7
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Plasma Beam",
+      "short_description": "High damage and spread.",
+      "long_description": "The Plasma Beam can do a fair amount of damage while also creating bouncing and spread bullets. It is valuable in any scenario.",
+      "buy_price": 38000,
+      "sell_price": 28500,
+      "exp_required": 2400,
+      "ships_allowed": [
+        1,
+        3,
+        5
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Gun": 1
+      },
+      "properties": {
+        "bulletenergy": "=20",
+        "initialbounty": -2,
+        "multifire": 1,
+        "multienergy": "=25",
+        "bounce": 1,
+        "gunlevel": 3,
+        "multidelay": "=32",
+        "bulletdelay": "=32"
+      },
+      "events": [],
+      "categories": {
+        "Guns": 8
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Arcfire Array",
+      "short_description": "High damage for cheap.",
+      "long_description": "Its damage is high but has a low rate of fire. Good for keeping range from enemies.",
+      "buy_price": 40000,
+      "sell_price": 30000,
+      "exp_required": 3100,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Gun": 1
+      },
+      "properties": {
+        "bulletenergy": "=18",
+        "initialbounty": -1,
+        "multifire": 1,
+        "multienergy": "=22",
+        "gunlevel": 3,
+        "multidelay": "=30",
+        "bulletdelay": "=30"
+      },
+      "events": [],
+      "categories": {
+        "Guns": 9
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Neutron Gun",
+      "short_description": "Basic, high energy bounce.",
+      "long_description": "Basic, high energy bounce.",
+      "buy_price": 55000,
+      "sell_price": 41250,
+      "exp_required": 4000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Gun": 1
+      },
+      "properties": {
+        "gunlevel": 3,
+        "bulletenergy": "=25",
+        "initialbounty": -1,
+        "bulletdelay": "=24",
+        "bounce": 1
+      },
+      "events": [],
+      "categories": {
+        "Guns": 11
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Mass Driver",
+      "short_description": "[S] Massive bullet generation.",
+      "long_description": "The Mass Driver generates very many bullets at once, flooding corridors.",
+      "buy_price": 65000,
+      "sell_price": 39000,
+      "exp_required": 6000,
+      "ships_allowed": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Gun": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "bulletenergy": "=26",
+        "initialbounty": -1,
+        "multifire": 1,
+        "multienergy": "=31",
+        "gunlevel": 1,
+        "multidelay": "=11",
+        "bulletdelay": "=11"
+      },
+      "events": [],
+      "categories": {
+        "Guns": 13
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "GigajouleRailgun",
+      "short_description": "[S] Very high damage weapon.",
+      "long_description": "Level 4 bullets.",
+      "buy_price": 110000,
+      "sell_price": 66000,
+      "exp_required": 9000,
+      "ships_allowed": [
+        3,
+        5,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Gun": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "gunlevel": 4,
+        "bulletenergy": "=22",
+        "bulletdelay": "=27"
+      },
+      "events": [
+        {
+          "event": "add",
+          "action": 0,
+          "data": 0,
+          "message": "This gun will appear to shoot L3 bullets, but will affect enemies as L4."
+        }
+      ],
+      "categories": {
+        "Guns": 16
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Dual Laser",
+      "short_description": "Experimental, versatile weapon.",
+      "long_description": "This prototype weapon has varying single- and multi-fire properties.",
+      "buy_price": 45000,
+      "sell_price": 33750,
+      "exp_required": 13000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Gun": 1,
+        "Prototype": 1
+      },
+      "properties": {
+        "bulletenergy": "=22",
+        "initialbounty": -2,
+        "multifire": 1,
+        "multienergy": "=24",
+        "bounce": 1,
+        "gunlevel": 3,
+        "multidelay": "=38",
+        "bulletdelay": "=27"
+      },
+      "events": [],
+      "categories": {
+        "Guns": 17
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Harpy Missile",
+      "short_description": "Basic proximity bomb.",
+      "long_description": "Harpy Missiles will explode as long as they are in proximity of a target.",
+      "buy_price": 1100,
+      "sell_price": 825,
+      "exp_required": 0,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Bomb": 1
+      },
+      "properties": {
+        "bombenergy": "=230",
+        "maxmines": "=4",
+        "prox": 1,
+        "bomblevel": 1,
+        "initialbounty": -1,
+        "minedelay": "=150",
+        "bombdelay": "=150"
+      },
+      "events": [],
+      "categories": {
+        "Bombs": 1
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Impact Bomb",
+      "short_description": "Basic, efficient bomb",
+      "long_description": "Basic, efficient bomb.",
+      "buy_price": 3000,
+      "sell_price": 2250,
+      "exp_required": 200,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Bomb": 1
+      },
+      "properties": {
+        "bombenergy": "=205",
+        "maxmines": "=4",
+        "bomblevel": 1,
+        "minedelay": "=136",
+        "mineenergy": "=235",
+        "bombdelay": "=100"
+      },
+      "events": [],
+      "categories": {
+        "Bombs": 2
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "String of Pearls",
+      "short_description": "Rapid mines",
+      "long_description": "Quickly deploys mines.",
+      "buy_price": 40000,
+      "sell_price": 30000,
+      "exp_required": 2750,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Bomb": 1
+      },
+      "properties": {
+        "bombenergy": "=10000",
+        "maxmines": "=7",
+        "prox": 1,
+        "bomblevel": 1,
+        "minedelay": "=12",
+        "initialbounty": -1,
+        "mineenergy": "=120",
+        "bombdelay": "=175"
+      },
+      "events": [],
+      "categories": {
+        "Bombs": 6
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "HE Missile",
+      "short_description": "High explosive missile.",
+      "long_description": "HE Missiles have a greater impact with twice the splash damage of a regular bomb.",
+      "buy_price": 15000,
+      "sell_price": 11250,
+      "exp_required": 750,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Bomb": 1
+      },
+      "properties": {
+        "bombenergy": "=215",
+        "maxmines": "=4",
+        "bomblevel": 2,
+        "minedelay": "=175",
+        "mineenergy": "=250",
+        "bombdelay": "=110"
+      },
+      "events": [],
+      "categories": {
+        "Bombs": 3
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Falcon Missile",
+      "short_description": "High shrapnel delivery.",
+      "long_description": "Falcon Missiles generate several shrapnel on impact.",
+      "buy_price": 37000,
+      "sell_price": 27750,
+      "exp_required": 2100,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Bomb": 1
+      },
+      "properties": {
+        "bombenergy": "=280",
+        "maxmines": "=3",
+        "shrapnel": 3,
+        "bomblevel": 1,
+        "minedelay": "=190",
+        "initialbounty": -3,
+        "mineenergy": "=310",
+        "shraplevel": "=3",
+        "bombdelay": "=140"
+      },
+      "events": [],
+      "categories": {
+        "Bombs": 4
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Space Mines",
+      "short_description": "High damage mining system.",
+      "long_description": "Space Mines can cover a great area with large proximity mines.",
+      "buy_price": 39000,
+      "sell_price": 29250,
+      "exp_required": 2500,
+      "ships_allowed": [
+        3,
+        4,
+        5
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Bomb": 1
+      },
+      "properties": {
+        "bombenergy": "=10000",
+        "maxmines": "=8",
+        "prox": 1,
+        "bomblevel": 2,
+        "minedelay": "=155",
+        "initialbounty": -4,
+        "shrapnel": 3,
+        "mineenergy": "=175",
+        "shraplevel": "=3",
+        "bombdelay": "=180"
+      },
+      "events": [],
+      "categories": {
+        "Bombs": 5
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Photon Bolt",
+      "short_description": "Extremely high explosive.",
+      "long_description": "This bomb deals some of the highest levels of splash damage available.",
+      "buy_price": 44000,
+      "sell_price": 33000,
+      "exp_required": 3200,
+      "ships_allowed": [
+        2,
+        4,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Bomb": 1
+      },
+      "properties": {
+        "bombenergy": "=275",
+        "maxmines": "=2",
+        "bomblevel": 3,
+        "minedelay": "=55",
+        "mineenergy": "=220",
+        "explodepixels": 8,
+        "bombdelay": "=250",
+        "jittertime": 70
+      },
+      "events": [],
+      "categories": {
+        "Bombs": 8
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Cluster Bomb",
+      "short_description": "Very effective bomb.",
+      "long_description": "With high splash and shrapnel damage, this bomb can be quite intimidating. Although, its reload time and energy costs are high.",
+      "buy_price": 49000,
+      "sell_price": 36750,
+      "exp_required": 3800,
+      "ships_allowed": [
+        2,
+        4,
+        6
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Bomb": 1
+      },
+      "properties": {
+        "bombenergy": "=310",
+        "maxmines": "=3",
+        "shrapnel": 3,
+        "bomblevel": 2,
+        "minedelay": "=260",
+        "initialbounty": -3,
+        "mineenergy": "=350",
+        "shraplevel": "=3",
+        "bombdelay": "=370"
+      },
+      "events": [],
+      "categories": {
+        "Bombs": 9
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Cyclone",
+      "short_description": "[S] Rapid fire system.",
+      "long_description": "The Cyclone system fires three missiles at once to deal a huge burst of damage.",
+      "buy_price": 75000,
+      "sell_price": 45000,
+      "exp_required": 7500,
+      "ships_allowed": [
+        4,
+        6
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Bomb": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "bombenergy": "=520",
+        "maxmines": "=0",
+        "bomblevel": 2,
+        "extrabombdelay": "=18",
+        "bombdelay": "=420",
+        "extrabombcount": "=2"
+      },
+      "events": [],
+      "categories": {
+        "Bombs": 10
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Phoenix Missile",
+      "short_description": "[S] Massive shrapnel generation.",
+      "long_description": "Phoenix Missiles are great at flooding areas with tons of shrapnel.",
+      "buy_price": 100000,
+      "sell_price": 60000,
+      "exp_required": 8500,
+      "ships_allowed": [
+        2,
+        4,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Bomb": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "bombenergy": "=235",
+        "maxmines": "=3",
+        "shrapnel": "=4",
+        "bomblevel": 1,
+        "minedelay": "=200",
+        "initialbounty": -4,
+        "mineenergy": "=140",
+        "shraplevel": "=2",
+        "bombdelay": "=135"
+      },
+      "events": [],
+      "categories": {
+        "Bombs": 11
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "TacNuke",
+      "short_description": "[S] Devastating nuclear bomb.",
+      "long_description": "TacNukes can make a huge impact, but take a while to reload.",
+      "buy_price": 105000,
+      "sell_price": 63000,
+      "exp_required": 8900,
+      "ships_allowed": [
+        3,
+        4,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Bomb": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "bombenergy": "=600",
+        "maxmines": "=1",
+        "shrapnel": 5,
+        "bomblevel": 3,
+        "prox": 1,
+        "initialbounty": -6,
+        "mineenergy": "=650",
+        "minedelay": "=450",
+        "shraplevel": "=3",
+        "bombdelay": "=400"
+      },
+      "events": [],
+      "categories": {
+        "Bombs": 12
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Reaper",
+      "short_description": "Unique bomb.",
+      "long_description": "The Reaper is designed to create a lot of damage for very little energy. However, its reload time is very high.",
+      "buy_price": 50000,
+      "sell_price": 37500,
+      "exp_required": 13500,
+      "ships_allowed": [
+        4,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Bomb": 1,
+        "Prototype": 1
+      },
+      "properties": {
+        "bombenergy": "=175",
+        "maxmines": "=0",
+        "shrapnel": 4,
+        "bomblevel": 3,
+        "initialbounty": -4,
+        "shraplevel": "=4",
+        "bombdelay": "=750"
+      },
+      "events": [],
+      "categories": {
+        "Bombs": 13
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Ion Drive",
+      "short_description": "All-around decent engine.",
+      "long_description": "Ion Drives do not try to excel in any particular area. Instead, they offer decent stats in all areas with no drawbacks.",
+      "buy_price": 1200,
+      "sell_price": 900,
+      "exp_required": 0,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Sublight": 1
+      },
+      "properties": {
+        "maxspeed": 2,
+        "maxthrust": 1,
+        "thrust": 3,
+        "rotation": 3,
+        "afterburner": -5,
+        "speed": 4
+      },
+      "events": [],
+      "categories": {
+        "Sublight Engines": 1
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "IceFire",
+      "short_description": "High speed engine.",
+      "long_description": "IceFire can offer very high sublight speeds, but is not so effective at braking.",
+      "buy_price": 5500,
+      "sell_price": 4125,
+      "exp_required": 300,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Sublight": 1
+      },
+      "properties": {
+        "maxspeed": 4,
+        "maxthrust": -1,
+        "thrust": 1,
+        "rotation": 2,
+        "afterburner": 10,
+        "speed": 8
+      },
+      "events": [],
+      "categories": {
+        "Sublight Engines": 2
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Retro Rockets",
+      "short_description": "Higher thrusting.",
+      "long_description": "Retro Rockets top off on speed rather quickly, but can always change course immediately.",
+      "buy_price": 11000,
+      "sell_price": 8250,
+      "exp_required": 550,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Sublight": 1
+      },
+      "properties": {
+        "maxspeed": -1,
+        "maxthrust": 4,
+        "thrust": 6,
+        "rotation": 1,
+        "afterburner": 10,
+        "speed": 2
+      },
+      "events": [],
+      "categories": {
+        "Sublight Engines": 3
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Overthruster",
+      "short_description": "High rotation drive.",
+      "long_description": "Allows for rapid turns and maneuvers.",
+      "buy_price": 21000,
+      "sell_price": 15750,
+      "exp_required": 650,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Sublight": 1
+      },
+      "properties": {
+        "maxspeed": 1,
+        "maxthrust": 3,
+        "thrust": 4,
+        "rotation": 7,
+        "afterburner": -15,
+        "speed": 1
+      },
+      "events": [],
+      "categories": {
+        "Sublight Engines": 4
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Carnot Engine",
+      "short_description": "No afterburners.",
+      "long_description": "Sacrifices afterburners for stronger normal engines.",
+      "buy_price": 36000,
+      "sell_price": 27000,
+      "exp_required": 2200,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Sublight": 1
+      },
+      "properties": {
+        "maxspeed": -2,
+        "maxthrust": -3,
+        "thrust": 5,
+        "rotation": 2,
+        "afterburner": 30,
+        "speed": 5
+      },
+      "events": [],
+      "categories": {
+        "Sublight Engines": 5
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Nuclear Booster",
+      "short_description": "Heavy ship booster.",
+      "long_description": "The Nuclear Booster allows heavy ships to gain speed much more quickly.",
+      "buy_price": 36000,
+      "sell_price": 27000,
+      "exp_required": 2200,
+      "ships_allowed": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Sublight": 1
+      },
+      "properties": {
+        "thrust": 8,
+        "rotation": -4,
+        "speed": 8
+      },
+      "events": [],
+      "categories": {
+        "Sublight Engines": 6
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "H2 RamScoop",
+      "short_description": "Recharge boosting engine.",
+      "long_description": "Redirects some engine power into recharge.",
+      "buy_price": 51000,
+      "sell_price": 38250,
+      "exp_required": 3300,
+      "ships_allowed": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Sublight": 1
+      },
+      "properties": {
+        "thrust": 1,
+        "rotation": -1,
+        "speed": 1,
+        "recharge": 20
+      },
+      "events": [],
+      "categories": {
+        "Sublight Engines": 7
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Reflection Drive",
+      "short_description": "Energy boosting engine.",
+      "long_description": "Redirects some engine power into energy.",
+      "buy_price": 52000,
+      "sell_price": 39000,
+      "exp_required": 3400,
+      "ships_allowed": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Sublight": 1
+      },
+      "properties": {
+        "thrust": 1,
+        "rotation": -1,
+        "speed": 1,
+        "energy": 20
+      },
+      "events": [],
+      "categories": {
+        "Sublight Engines": 8
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Semiwarp Burners",
+      "short_description": "[S] Enhanced afterburners.",
+      "long_description": "Semiwarp Burners create powerful afterburning capabilities.",
+      "buy_price": 70000,
+      "sell_price": 42000,
+      "exp_required": 7000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Signature": 1,
+        "Sublight": 1
+      },
+      "properties": {
+        "thrust": 2,
+        "maxthrust": 8,
+        "maxspeed": 2,
+        "speed": 1,
+        "afterburner": -20
+      },
+      "events": [],
+      "categories": {
+        "Sublight Engines": 9
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Omega Drive",
+      "short_description": "[S] Above-average engine.",
+      "long_description": "Powerful in all areas.",
+      "buy_price": 90000,
+      "sell_price": 54000,
+      "exp_required": 8600,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Signature": 1,
+        "Sublight": 1
+      },
+      "properties": {
+        "maxspeed": 3,
+        "maxthrust": 2,
+        "thrust": 6,
+        "rotation": 6,
+        "afterburner": -20,
+        "speed": 6
+      },
+      "events": [],
+      "categories": {
+        "Sublight Engines": 11
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Sleipnir Drive",
+      "short_description": "[S] For anchor ships.",
+      "long_description": "Replaces a ship's drive by larger, more powerful engines that are hardly affected by heavy loads.",
+      "buy_price": 65200,
+      "sell_price": 39000,
+      "exp_required": 7500,
+      "ships_allowed": [
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Signature": 1,
+        "Sublight": 1
+      },
+      "properties": {
+        "maxspeed": -2,
+        "turretspeed": -250,
+        "maxthrust": -1,
+        "turretthrust": -3,
+        "thrust": 8,
+        "rotation": 3,
+        "speed": 7
+      },
+      "events": [],
+      "categories": {
+        "Sublight Engines": 10
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Asgard Engine",
+      "short_description": "Unique prototype engine.",
+      "long_description": "Capable of very high speeds when afterburning, or high thrust when using normal engines.",
+      "buy_price": 64000,
+      "sell_price": 48000,
+      "exp_required": 14500,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Prototype": 1,
+        "Sublight": 1
+      },
+      "properties": {
+        "gravspeed": -11000,
+        "maxspeed": 8,
+        "maxthrust": -5,
+        "thrust": 5,
+        "rotation": 0,
+        "afterburner": 50,
+        "speed": -4
+      },
+      "events": [],
+      "categories": {
+        "Sublight Engines": 13
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Fusion Reactor",
+      "short_description": "Basic reactor.",
+      "long_description": "Fusion Reactor offers a fair balance of energy and recharge, and other features.",
+      "buy_price": 1300,
+      "sell_price": 975,
+      "exp_required": 0,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Reactor": 1
+      },
+      "properties": {
+        "energy": 35,
+        "ebombtime": -90,
+        "recharge": 35
+      },
+      "events": [],
+      "categories": {
+        "Reactor Plants": 1
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "ESPER System",
+      "short_description": "High energy.",
+      "long_description": "Emphasizes maximum energy while lacking recharge.",
+      "buy_price": 12000,
+      "sell_price": 9000,
+      "exp_required": 400,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Reactor": 1
+      },
+      "properties": {
+        "energy": 55,
+        "recharge": 25
+      },
+      "events": [],
+      "categories": {
+        "Reactor Plants": 2
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Compression Core",
+      "short_description": "High recharge.",
+      "long_description": "Emphasizes high recharge while lacking energy.",
+      "buy_price": 13000,
+      "sell_price": 9750,
+      "exp_required": 500,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Reactor": 1
+      },
+      "properties": {
+        "energy": 25,
+        "recharge": 55
+      },
+      "events": [],
+      "categories": {
+        "Reactor Plants": 3
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Quantum Reactor",
+      "short_description": "Heavy balanced reactor.",
+      "long_description": "Similar to Fusion Reactor, but more powerful at the cost of some mobility.",
+      "buy_price": 38000,
+      "sell_price": 28500,
+      "exp_required": 2300,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Reactor": 1
+      },
+      "properties": {
+        "thrust": -1,
+        "maxthrust": -2,
+        "energy": 45,
+        "rotation": -2,
+        "recharge": 45
+      },
+      "events": [],
+      "categories": {
+        "Reactor Plants": 4
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Resonance Sphere",
+      "short_description": "Heavy energy reactor.",
+      "long_description": "High maximum energy, slows your ship down.",
+      "buy_price": 46000,
+      "sell_price": 34500,
+      "exp_required": 2600,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Reactor": 1
+      },
+      "properties": {
+        "thrust": -1,
+        "maxthrust": -2,
+        "energy": 75,
+        "rotation": -2,
+        "recharge": 10
+      },
+      "events": [],
+      "categories": {
+        "Reactor Plants": 5
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Tokamak",
+      "short_description": "Heavy recharge reactor.",
+      "long_description": "High maximum recharge, slows your ship down.",
+      "buy_price": 47000,
+      "sell_price": 35250,
+      "exp_required": 2650,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Reactor": 1
+      },
+      "properties": {
+        "thrust": -1,
+        "maxthrust": -2,
+        "energy": 10,
+        "rotation": -2,
+        "recharge": 75
+      },
+      "events": [],
+      "categories": {
+        "Reactor Plants": 6
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "ZPM",
+      "short_description": "[S] Signature energy reactor.",
+      "long_description": "Rare reactor core, providing massive energy.",
+      "buy_price": 96000,
+      "sell_price": 57600,
+      "exp_required": 8700,
+      "ships_allowed": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Reactor": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "energy": 90,
+        "afterburner": -5,
+        "multienergypct": -5,
+        "bulletenergypct": -5,
+        "recharge": 20
+      },
+      "events": [],
+      "categories": {
+        "Reactor Plants": 8
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Mezon Capacitor",
+      "short_description": "[S] Signature recharge reactor.",
+      "long_description": "Provides some of the highest recharge levels available.",
+      "buy_price": 97000,
+      "sell_price": 58200,
+      "exp_required": 8750,
+      "ships_allowed": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Reactor": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "energy": 25,
+        "ebombtime": -33,
+        "bombenergypct": -10,
+        "recharge": 90
+      },
+      "events": [],
+      "categories": {
+        "Reactor Plants": 9
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Ampere Imploder",
+      "short_description": "[S] Powerful balanced reactor.",
+      "long_description": "Evens out energy and recharge at a high level.",
+      "buy_price": 98000,
+      "sell_price": 58800,
+      "exp_required": 8800,
+      "ships_allowed": [
+        1,
+        2,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Reactor": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "energy": 55,
+        "recharge": 55
+      },
+      "events": [],
+      "categories": {
+        "Reactor Plants": 10
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Aux. Alternator",
+      "short_description": "Prototype reactor.",
+      "long_description": "Instead of providing much energy and recharge, the Auxiliary Alternator cuts down on weapon and device costs.",
+      "buy_price": 53000,
+      "sell_price": 39750,
+      "exp_required": 15000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Prototype": 1,
+        "Reactor": 1
+      },
+      "properties": {
+        "bombenergypct": -10,
+        "bulletenergypct": -10,
+        "cloakenergy": -250,
+        "energy": 10,
+        "ebombtime": 100,
+        "xradarenergy": -200,
+        "antienergy": -75,
+        "stealthenergy": -50,
+        "mineenergypct": -10,
+        "multienergypct": -10,
+        "recharge": 10
+      },
+      "events": [],
+      "categories": {
+        "Reactor Plants": 11
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Ablative Armor",
+      "short_description": "All-around protection.",
+      "long_description": "Offers a ten percent reduction from all types of damage.",
+      "buy_price": 2500,
+      "sell_price": 1875,
+      "exp_required": 0,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Armor": 1
+      },
+      "properties": {
+        "bombdamage": -77,
+        "bulletdamageup": -7,
+        "bulletdamage": -13,
+        "ebombdamage": -35,
+        "inactshrapdamage": -1,
+        "burstdamage": -32
+      },
+      "events": [],
+      "categories": {
+        "Armor": 1
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Metaphasic Armor",
+      "short_description": "Bullet protection.",
+      "long_description": "Reduces incoming damage from all bullets by about twenty percent.",
+      "buy_price": 40000,
+      "sell_price": 30000,
+      "exp_required": 2400,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Armor": 1
+      },
+      "properties": {
+        "inactshrapdamage": 2,
+        "explodepixels": 3,
+        "bulletdamageup": -12,
+        "bombdamage": 30,
+        "bulletdamage": -25
+      },
+      "events": [],
+      "categories": {
+        "Armor": 2
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Shock Matrix",
+      "short_description": "Bomb protection.",
+      "long_description": "Reduces bomb damage by about twenty percent.",
+      "buy_price": 42000,
+      "sell_price": 31500,
+      "exp_required": 2450,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Armor": 1
+      },
+      "properties": {
+        "inactshrapdamage": -2,
+        "bombdamage": -154
+      },
+      "events": [],
+      "categories": {
+        "Armor": 3
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Wave Disperser",
+      "short_description": "Splash damage reduction.",
+      "long_description": "Wave Dispersers make your ship more resilient against splash damage and shrapnel.",
+      "buy_price": 44000,
+      "sell_price": 33000,
+      "exp_required": 2550,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Armor": 1
+      },
+      "properties": {
+        "explodepixels": -30,
+        "shrapdamage": -85,
+        "bombdamage": 35
+      },
+      "events": [],
+      "categories": {
+        "Armor": 4
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Aurora Refund",
+      "short_description": "Deprecated.",
+      "long_description": "Taps into energy reserves to boost the shield to an above-average protection.",
+      "buy_price": 0,
+      "sell_price": 45500,
+      "exp_required": 2650,
+      "ships_allowed": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Armor": 1
+      },
+      "properties": {},
+      "events": [],
+      "categories": {
+        "Armor": 5
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Radiating Coils",
+      "short_description": "[S] Signature shrap&burst armor.",
+      "long_description": "Cuts the damage of shrapnel and bursts dramatically.",
+      "buy_price": 69500,
+      "sell_price": 41700,
+      "exp_required": 8800,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Armor": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "bulletdamageup": -3,
+        "burstdamage": -192,
+        "shrapdamage": -223,
+        "bulletdamage": -6
+      },
+      "events": [],
+      "categories": {
+        "Armor": 6
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Kull Refund",
+      "short_description": "[S] Deprecated.",
+      "long_description": "Greatly weighs your ship down to provide unmatched protection.",
+      "buy_price": 0,
+      "sell_price": 84000,
+      "exp_required": 9050,
+      "ships_allowed": [
+        3,
+        4,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Armor": 1,
+        "Signature": 1
+      },
+      "properties": {},
+      "events": [],
+      "categories": {
+        "Armor": 7
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Faraday Shield",
+      "short_description": "Unique protection.",
+      "long_description": "The Faraday Shield was designed to make ships more resilient against EMP and High-energy weapons.",
+      "buy_price": 55000,
+      "sell_price": 41250,
+      "exp_required": 15500,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Armor": 1,
+        "Prototype": 1
+      },
+      "properties": {
+        "ebombdamage": -210,
+        "bulletdamageup": -22,
+        "ebombtime": -288
+      },
+      "events": [],
+      "categories": {
+        "Armor": 8
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Weapons Scanner",
+      "short_description": "Detects missiles and mines.",
+      "long_description": "Helps you to detect the trajectory of missiles or mines from a long range.",
+      "buy_price": 6500,
+      "sell_price": 4875,
+      "exp_required": 500,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Sensor": 1
+      },
+      "properties": {
+        "mapzoom": 4,
+        "seemines": "=1",
+        "xradarenergy": -110,
+        "seebomblevel": "=1",
+        "antienergy": -60
+      },
+      "events": [],
+      "categories": {
+        "Sensors": 3
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "LR Sensors",
+      "short_description": "Long distance scanning.",
+      "long_description": "Greatly enhances the distance your radar reaches.",
+      "buy_price": 12500,
+      "sell_price": 9375,
+      "exp_required": 750,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Sensor": 1
+      },
+      "properties": {
+        "mapzoom": 12,
+        "seemines": "=1"
+      },
+      "events": [],
+      "categories": {
+        "Sensors": 4
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Tachyon Sensor",
+      "short_description": "Detects cloaked ships.",
+      "long_description": "Effectively reveals stealthed and cloaked ships.",
+      "buy_price": 5000,
+      "sell_price": 3750,
+      "exp_required": 150,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Sensor": 1
+      },
+      "properties": {
+        "xradar": 1
+      },
+      "events": [],
+      "categories": {
+        "Sensors": 2
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "L1-Energy Scanner",
+      "short_description": "View enemy energy levels",
+      "long_description": "Accurately reveals enemy energy levels",
+      "buy_price": 0,
+      "sell_price": 40000,
+      "exp_required": 2250,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Sensor": 1
+      },
+      "properties": {},
+      "events": [
+        {
+          "event": "add",
+          "action": 0,
+          "data": 0,
+          "message": "Energy viewing will activate after next respawn."
+        }
+      ],
+      "categories": {
+        "Hidden": 0
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Old AW Refund",
+      "short_description": "Moved to sensors.",
+      "long_description": "Moved to sensors. ?iteminfo Warp Disruptor",
+      "buy_price": 0,
+      "sell_price": 2000,
+      "exp_required": 100,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Equipment": 1
+      },
+      "properties": {
+        "antiwarp": 1
+      },
+      "events": [],
+      "categories": {
+        "Hidden": 1
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Power Strip",
+      "short_description": "Buffs energy and recharge.",
+      "long_description": "A cheap boost to ship energy levels.",
+      "buy_price": 2500,
+      "sell_price": 1875,
+      "exp_required": 275,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Equipment": 1
+      },
+      "properties": {
+        "energy": 10,
+        "recharge": 10
+      },
+      "events": [],
+      "categories": {
+        "Equipment": 2
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Maneuvering Fins",
+      "short_description": "Enhances movement.",
+      "long_description": "Lets your ship make more effective maneuvers.",
+      "buy_price": 7200,
+      "sell_price": 5400,
+      "exp_required": 450,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Equipment": 1
+      },
+      "properties": {
+        "thrust": 1,
+        "rotation": 2
+      },
+      "events": [],
+      "categories": {
+        "Equipment": 3
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Prismatic Core",
+      "short_description": "Quickens weapons fire.",
+      "long_description": "Reduces the delay of guns and bombs.",
+      "buy_price": 37000,
+      "sell_price": 27750,
+      "exp_required": 2300,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Equipment": 1
+      },
+      "properties": {
+        "bulletdelaypct": -5,
+        "multidelaypct": -5,
+        "bombdelaypct": -5,
+        "minedelaypct": -5
+      },
+      "events": [],
+      "categories": {
+        "Equipment": 4
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Stealth Shaper",
+      "short_description": "Hides ship from enemy radar.",
+      "long_description": "Gives you stealth capabilities to avoid detection on enemy radars.",
+      "buy_price": 38000,
+      "sell_price": 28500,
+      "exp_required": 2500,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Equipment": 1
+      },
+      "properties": {
+        "stealth": 1
+      },
+      "events": [],
+      "categories": {
+        "Equipment": 5
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Cloak Shaper",
+      "short_description": "Makes you invisible.",
+      "long_description": "Ships without special sensors will not be able to see you.",
+      "buy_price": 40000,
+      "sell_price": 30000,
+      "exp_required": 3000,
+      "ships_allowed": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Equipment": 1
+      },
+      "properties": {
+        "cloak": 1
+      },
+      "events": [],
+      "categories": {
+        "Equipment": 6
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Maxwell Infusers",
+      "short_description": "Boosts afterburners.",
+      "long_description": "Reduces the energy cost of afterburners and increases their output.",
+      "buy_price": 46000,
+      "sell_price": 34500,
+      "exp_required": 3300,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Equipment": 1
+      },
+      "properties": {
+        "maxthrust": 2,
+        "maxspeed": 3,
+        "afterburner": -30
+      },
+      "events": [],
+      "categories": {
+        "Equipment": 7
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "System Optimizer",
+      "short_description": "[S] Fine tunes all systems.",
+      "long_description": "Offers small upgrades in a variety of areas for overall optimization.",
+      "buy_price": 88000,
+      "sell_price": 52800,
+      "exp_required": 7100,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Equipment": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "maxspeed": 1,
+        "stealthenergy": "=!0",
+        "maxthrust": 1,
+        "energy": 10,
+        "antienergy": -120,
+        "thrust": 1,
+        "rotation": 2,
+        "afterburner": -15,
+        "speed": 2,
+        "recharge": 10
+      },
+      "events": [],
+      "categories": {
+        "Equipment": 10
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Sensor Disruptor",
+      "short_description": "[S] Disrupts enemy sensors.",
+      "long_description": "Sensor Disruptors grant free antiwarp, hides your energy, and provides other bonuses.",
+      "buy_price": 92000,
+      "sell_price": 55200,
+      "exp_required": 7250,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Sensor": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "energyscrambling": 1,
+        "ebombdamage": -100,
+        "energy": 15,
+        "ebombtime": -50,
+        "antiwarp": 2,
+        "xradarenergy": -175,
+        "antienergy": "=!0",
+        "thrust": 1,
+        "rotation": 2,
+        "cloakenergy": -420
+      },
+      "events": [],
+      "categories": {
+        "Sensors": 8
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Manifold Core",
+      "short_description": "Experimental system.",
+      "long_description": "Affects several ship systems that most items cannot.",
+      "buy_price": 55000,
+      "sell_price": 41250,
+      "exp_required": 16000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Equipment": 1,
+        "Prototype": 1
+      },
+      "properties": {
+        "gravspeed": -5000,
+        "fielddelay": -1000,
+        "adcooldown": -1500,
+        "jittertime": -25
+      },
+      "events": [],
+      "categories": {
+        "Equipment": 11
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Evasion Mount",
+      "short_description": "Rocket boosters and repel.",
+      "long_description": "Evasion Mount provides several rockets and a repel. Great for entering or exiting combat.",
+      "buy_price": 11000,
+      "sell_price": 8250,
+      "exp_required": 575,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Mount": 1,
+        "Repel Mount": 1
+      },
+      "properties": {
+        "rocketmax": 2,
+        "repel": 1,
+        "repelmax": 1,
+        "rocket": 2
+      },
+      "events": [],
+      "categories": {
+        "Mounts": 1
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Decoy System",
+      "short_description": "Deception system.",
+      "long_description": "Use decoys and portals to manipulate enemies.",
+      "buy_price": 15000,
+      "sell_price": 11250,
+      "exp_required": 900,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Mount": 1
+      },
+      "properties": {
+        "decoy": 2,
+        "portal": 2,
+        "decoymax": 2,
+        "portalmax": 2
+      },
+      "events": [],
+      "categories": {
+        "Mounts": 2
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Turret Mount",
+      "short_description": "Lets ships stay attached.",
+      "long_description": "Allows up to two ships to stay on your ship, acting as turrets.",
+      "buy_price": 20000,
+      "sell_price": 15000,
+      "exp_required": 1000,
+      "ships_allowed": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Mount": 1
+      },
+      "properties": {
+        "turretlimit": 2
+      },
+      "events": [],
+      "categories": {
+        "Mounts": 3
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Close Combat",
+      "short_description": "Repels and Bursts.",
+      "long_description": "Great for close-quarters fights.",
+      "buy_price": 36000,
+      "sell_price": 27000,
+      "exp_required": 1600,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 2,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Mount": 1,
+        "Repel Mount": 1
+      },
+      "properties": {
+        "burstmax": 1,
+        "repel": 1,
+        "repelmax": 1,
+        "burst": 1
+      },
+      "events": [],
+      "categories": {
+        "Mounts": 4
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Siege Pack",
+      "short_description": "Thor and burst.",
+      "long_description": "Provides a Thor's Hammer, a high-explosive bomb that travels through walls, and a burst.",
+      "buy_price": 42000,
+      "sell_price": 31500,
+      "exp_required": 3200,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Mount": 1
+      },
+      "properties": {
+        "thormax": 1,
+        "burstmax": 1,
+        "burst": 1,
+        "enterdelay": 300,
+        "thor": 1
+      },
+      "events": [],
+      "categories": {
+        "Mounts": 5
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Wall Mount",
+      "short_description": "Access to bricks.",
+      "long_description": "Requires the purchase of individual bricks. Check the consumables category.",
+      "buy_price": 48000,
+      "sell_price": 36000,
+      "exp_required": 3500,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 2,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Brick": -1,
+        "Mount": 1
+      },
+      "properties": {
+        "brickmax": 1
+      },
+      "events": [],
+      "categories": {
+        "Mounts": 6
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Field Generator",
+      "short_description": "Launches fields.",
+      "long_description": "Requires individual field ammo. Check the consumables category.",
+      "buy_price": 55000,
+      "sell_price": 41250,
+      "exp_required": 4000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Mount": 1
+      },
+      "properties": {
+        "fieldlauncher": 1,
+        "fielddelay": 24000
+      },
+      "events": [],
+      "categories": {
+        "Mounts": 7
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Combo Mount",
+      "short_description": "[S] Many items in one pack.",
+      "long_description": "One of every item except for brick.",
+      "buy_price": 75000,
+      "sell_price": 45000,
+      "exp_required": 7800,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Mount": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "portalmax": 1,
+        "rocketmax": 1,
+        "rocket": 1,
+        "burst": 1,
+        "decoy": 1,
+        "burstmax": 1,
+        "repel": 1,
+        "repelmax": 1,
+        "portal": 1,
+        "decoymax": 1
+      },
+      "events": [],
+      "categories": {
+        "Mounts": 8
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Point Defense",
+      "short_description": "Automatic turret system.",
+      "long_description": "Point Defense is an automated protection system armed with high energy weapons.",
+      "buy_price": 54000,
+      "sell_price": 40500,
+      "exp_required": 16500,
+      "ships_allowed": [
+        3,
+        4,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Mount": 1,
+        "Prototype": 1,
+        "Turret": 1
+      },
+      "properties": {
+        "turretenergy": 1500,
+        "turretrecharge": 220,
+        "turretmaxrange": 300,
+        "turretweapon": 1,
+        "turretlevel": 4,
+        "turretdelay": 88,
+        "turretminrange": 10,
+        "turretship": 2,
+        "turretalt": 1
+      },
+      "events": [
+        {
+          "event": "add",
+          "action": 0,
+          "data": 0,
+          "message": "You can temporarily detach the turret with the attach key."
+        }
+      ],
+      "categories": {
+        "Mounts": 10
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "ID Drive",
+      "short_description": "Interdimensional transport.",
+      "long_description": "Use ?id <sector> to move from one sector to another.",
+      "buy_price": 25000,
+      "sell_price": 18750,
+      "exp_required": 750,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "FTL": 1
+      },
+      "properties": {
+        "idonlytk": "=!1",
+        "idwarmup": "=!225",
+        "idmaxtofail": "=!85",
+        "idarea": "=!45",
+        "idimage": "=!130",
+        "idcool": "=!2100",
+        "idblast": "=!4",
+        "id": "=!1"
+      },
+      "events": [
+        {
+          "event": "add",
+          "action": 0,
+          "data": 0,
+          "message": "Use ?id <1-8 or C> to engage the ID Drives."
+        },
+        {
+          "event": "id",
+          "action": 3,
+          "data": -13,
+          "message": "ID Drive activated!"
+        }
+      ],
+      "categories": {
+        "FTL Engines": 1
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Evoker",
+      "short_description": "Limited summoning device.",
+      "long_description": "Summons small- and medium-sized ships.",
+      "buy_price": 50000,
+      "sell_price": 37500,
+      "exp_required": 2000,
+      "ships_allowed": [
+        3,
+        4,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "FTL": 1,
+        "Summon": 1
+      },
+      "properties": {
+        "antiwarp": "=0",
+        "summonmask": 51,
+        "summon": 1
+      },
+      "events": [
+        {
+          "event": "add",
+          "action": 0,
+          "data": 0,
+          "message": "Use /?summon to summon teammates."
+        }
+      ],
+      "categories": {
+        "FTL Engines": 2
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Summoner",
+      "short_description": "Brings teammates to you.",
+      "long_description": "PM a teammate with ?summon to attach them to you.  Type ?antisummon to block being summoned.",
+      "buy_price": 50000,
+      "sell_price": 37500,
+      "exp_required": 1500,
+      "ships_allowed": [
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "FTL": 1,
+        "Summon": 1
+      },
+      "properties": {
+        "summonmask": 191,
+        "summon": 1
+      },
+      "events": [
+        {
+          "event": "add",
+          "action": 0,
+          "data": 0,
+          "message": "Use /?summon to summon teammates."
+        }
+      ],
+      "categories": {
+        "FTL Engines": 3
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Sensor Pod",
+      "short_description": "Sensor in place of Equipment.",
+      "long_description": "Converts an Equipment slot into a Sensor slot.",
+      "buy_price": 35000,
+      "sell_price": 26250,
+      "exp_required": 6000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Capacity": 1,
+        "Equipment": 1,
+        "Sensor": -1
+      },
+      "properties": {},
+      "events": [],
+      "categories": {
+        "Converters": 1
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Equipment Pod",
+      "short_description": "Equipment in place of Mount.",
+      "long_description": "Converts a Mount slot into an Equipment slot.",
+      "buy_price": 45000,
+      "sell_price": 33750,
+      "exp_required": 7500,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Capacity": 1,
+        "Equipment": -1,
+        "Mount": 1
+      },
+      "properties": {},
+      "events": [],
+      "categories": {
+        "Converters": 2
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Mount Pod",
+      "short_description": "Mount in place of Equipment.",
+      "long_description": "Converts an Equipment slot into a Mount slot.",
+      "buy_price": 55000,
+      "sell_price": 41250,
+      "exp_required": 9000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Capacity": 1,
+        "Equipment": 1,
+        "Mount": -1
+      },
+      "properties": {},
+      "events": [],
+      "categories": {
+        "Converters": 3
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Extra FTL",
+      "short_description": "For Lancs.",
+      "long_description": "The moment you've been waiting for... Dual-FTL Lancaster.",
+      "buy_price": 110000,
+      "sell_price": 82500,
+      "exp_required": 14000,
+      "ships_allowed": [
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Capacity": 1,
+        "FTL": -1
+      },
+      "properties": {},
+      "events": [],
+      "categories": {
+        "Converters": 4
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Parasite",
+      "short_description": "Hinders your ship to produce...",
+      "long_description": "The Parasite will restrict your ship greatly, but it's rumored to produce something...",
+      "buy_price": 38000,
+      "sell_price": 7600,
+      "exp_required": 3900,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": "Shell",
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "???": 1
+      },
+      "properties": {
+        "bulletdelaypct": 5,
+        "bulletdamageup": 2,
+        "bombenergypct": 5,
+        "bulletenergypct": 5,
+        "bulletdamage": 5,
+        "energy": -10,
+        "bombdamage": 30,
+        "minedelaypct": 5,
+        "mapzoom": -2,
+        "multidelaypct": 5,
+        "bombdelaypct": 5,
+        "thrust": -1,
+        "rotation": -1,
+        "mineenergypct": 5,
+        "speed": -1,
+        "multienergypct": 5,
+        "recharge": -10
+      },
+      "events": [
+        {
+          "event": "init",
+          "action": 4,
+          "data": 1000,
+          "message": "The Parasite has been applied."
+        },
+        {
+          "event": "kill",
+          "action": 6,
+          "data": 1,
+          "message": "The Parasite continues to sap your ship..."
+        },
+        {
+          "event": "datazero",
+          "action": 1,
+          "data": 1,
+          "message": "The Parasite has lost its appetite! It left behind a Shell."
+        },
+        {
+          "event": "datazero",
+          "action": 2,
+          "data": -1,
+          "message": ""
+        }
+      ],
+      "categories": {
+        "Alien Technology": 1
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Nanomite Swarm",
+      "short_description": "Highly advanced nanobots.",
+      "long_description": "A huge number of destructive, self-replicating nanoscale robots.",
+      "buy_price": 54000,
+      "sell_price": 10800,
+      "exp_required": 4000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": "Molecular Cover",
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "???": 1,
+        "Armor": 1
+      },
+      "properties": {
+        "bulletdamageup": 8,
+        "bombenergypct": 10,
+        "bulletenergypct": 10,
+        "bulletdamage": 6,
+        "minedelaypct": 10,
+        "bulletdelaypct": 10,
+        "multidelaypct": 10,
+        "bombdelaypct": 10,
+        "thrust": -4,
+        "explodepixels": 17,
+        "rotation": -3,
+        "mineenergypct": 10,
+        "speed": -4,
+        "multienergypct": 10
+      },
+      "events": [
+        {
+          "event": "init",
+          "action": 4,
+          "data": 1200,
+          "message": "The Nanomite swarm slowly covers your ship..."
+        },
+        {
+          "event": "kill",
+          "action": 6,
+          "data": 1,
+          "message": "The swarm grows as it absorbs ship debris..."
+        },
+        {
+          "event": "death",
+          "action": 5,
+          "data": 1,
+          "message": "The destruction of your ship weakens the swarm..."
+        },
+        {
+          "event": "datazero",
+          "action": 1,
+          "data": 1,
+          "message": "The Nanomite swarm has fully evolved into the Molecular Cover!"
+        },
+        {
+          "event": "datazero",
+          "action": 2,
+          "data": -1,
+          "message": ""
+        }
+      ],
+      "categories": {
+        "Alien Technology": 2
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Antideath",
+      "short_description": "Revives a ship where it died.",
+      "long_description": "Brings a ship back to life where it died. Takes two minutes to recharge.",
+      "buy_price": 250000,
+      "sell_price": 187500,
+      "exp_required": 6500,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Alien Tech": 1
+      },
+      "properties": {
+        "adcooldown": 12000,
+        "addelay": 500
+      },
+      "events": [
+        {
+          "event": "death",
+          "action": 9,
+          "data": 101,
+          "message": ""
+        },
+        {
+          "event": "pread",
+          "action": 0,
+          "data": 0,
+          "message": "Prepare to be resurrected..."
+        },
+        {
+          "event": "ad",
+          "action": 0,
+          "data": 0,
+          "message": "Resurrection complete!"
+        }
+      ],
+      "categories": {
+        "Alien Technology": 3
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Baryon Injector",
+      "short_description": "[S] Ludicrous speed.",
+      "long_description": "Ludicrous speed.",
+      "buy_price": 3000000,
+      "sell_price": 1000000,
+      "exp_required": 16000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Alien Tech": 1,
+        "Signature": 1,
+        "Sublight": 1
+      },
+      "properties": {
+        "maxspeed": 4,
+        "maxthrust": 3,
+        "rocketthrust": 6,
+        "rocketspeed": 375,
+        "thrust": 7,
+        "rotation": 10,
+        "afterburner": -25,
+        "speed": 7
+      },
+      "events": [],
+      "categories": {
+        "Alien Technology": 6
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Temporal Core",
+      "short_description": "[S] Unsurpassed reactor.",
+      "long_description": "Unsurpassed reactor.",
+      "buy_price": 3000000,
+      "sell_price": 1000000,
+      "exp_required": 16000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Alien Tech": 1,
+        "Reactor": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "afterburner": -25,
+        "bombenergypct": -5,
+        "bulletenergypct": -5,
+        "energy": 60,
+        "mineenergypct": -5,
+        "multienergypct": -5,
+        "recharge": 70
+      },
+      "events": [],
+      "categories": {
+        "Alien Technology": 7
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Adamantine Shell",
+      "short_description": "[S] Legendary armor.",
+      "long_description": "Legendary armor.",
+      "buy_price": 3000000,
+      "sell_price": 1000000,
+      "exp_required": 16000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Alien Tech": 1,
+        "Armor": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "bombdamage": -135,
+        "bulletdamageup": -21,
+        "bulletdamage": -42,
+        "ebombdamage": -50,
+        "ebombtime": -25,
+        "inactshrapdamage": -1,
+        "explodepixels": -2,
+        "burstdamage": -20
+      },
+      "events": [],
+      "categories": {
+        "Alien Technology": 8
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Supercomputer",
+      "short_description": "[S] Advanced technology.",
+      "long_description": "Using Dual-Quad-Quad Core processing, the Supercomputer is able to provide many sensors and disruptors at once.",
+      "buy_price": 3000000,
+      "sell_price": 1000000,
+      "exp_required": 16000,
+      "ships_allowed": [
+        3,
+        4,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Alien Tech": 1,
+        "Sensor": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "antiwarp": 1,
+        "stealthenergy": "=!0",
+        "cloak": 1,
+        "mapzoom": 4,
+        "stealth": 1,
+        "xradarenergy": "=!0",
+        "xradar": 1,
+        "antiwarpenergy": "=!0",
+        "cloakenergy": "=1"
+      },
+      "events": [],
+      "categories": {
+        "Alien Technology": 9
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Dilithium Matrix",
+      "short_description": "[S] Short-range FTL jumps.",
+      "long_description": "The Dilithium Matrix allows ships to travel at faster-than-light speeds in any direction. See ?man blink for directions.",
+      "buy_price": 3000000,
+      "sell_price": 1000000,
+      "exp_required": 16000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Alien Tech": 1,
+        "FTL": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "blinkdelay": "=1000",
+        "blinkaweffect": -32,
+        "blink": "=!1",
+        "blinkmin": "=128",
+        "blinkdistance": "=256",
+        "blinkradius": "=16"
+      },
+      "events": [],
+      "categories": {
+        "FTL Engines": 5
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Energy Infusion",
+      "short_description": "Full energy recharge.",
+      "long_description": "Use the brick to get a full recharge immediately. 3 uses.",
+      "buy_price": 300,
+      "sell_price": 100,
+      "exp_required": 3500,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Brick": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "brick": 1,
+        "dontbrick": 1,
+        "energy": 10,
+        "recharge": 10
+      },
+      "events": [
+        {
+          "event": "brick",
+          "action": 3,
+          "data": 13,
+          "message": ""
+        },
+        {
+          "event": "init",
+          "action": 4,
+          "data": 3,
+          "message": "Energy Infusion will work three times."
+        },
+        {
+          "event": "datazero",
+          "action": 1,
+          "data": 1,
+          "message": "Energy Infusion has run out of uses!"
+        },
+        {
+          "event": "brick",
+          "action": 6,
+          "data": 1,
+          "message": ""
+        }
+      ],
+      "categories": {
+        "Consumables": 1
+      },
+      "stores": [
+        "Ammo Depots"
+      ]
+    },
+    {
+      "name": "Basic Brick",
+      "short_description": "Basic wall.",
+      "long_description": "",
+      "buy_price": 1000,
+      "sell_price": 100,
+      "exp_required": 3500,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Brick": 1
+      },
+      "properties": {
+        "brick": 1,
+        "brickspan": "=!7",
+        "brickmode": "=!1"
+      },
+      "events": [
+        {
+          "event": "brick",
+          "action": 1,
+          "data": 1,
+          "message": ""
+        }
+      ],
+      "categories": {
+        "Consumables": 3
+      },
+      "stores": [
+        "Ammo Depots"
+      ]
+    },
+    {
+      "name": "Wide Brick",
+      "short_description": "Long wall.",
+      "long_description": "",
+      "buy_price": 2000,
+      "sell_price": 100,
+      "exp_required": 3500,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Brick": 2
+      },
+      "properties": {
+        "brick": 1,
+        "brickspan": "=!12",
+        "brickmode": "=!2"
+      },
+      "events": [
+        {
+          "event": "brick",
+          "action": 1,
+          "data": 1,
+          "message": ""
+        }
+      ],
+      "categories": {
+        "Consumables": 4
+      },
+      "stores": [
+        "Ammo Depots"
+      ]
+    },
+    {
+      "name": "Cage Brick",
+      "short_description": "Box shaped wall.",
+      "long_description": "",
+      "buy_price": 3000,
+      "sell_price": 100,
+      "exp_required": 3500,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Brick": 2
+      },
+      "properties": {
+        "brick": 1,
+        "brickspan": "=!10",
+        "brickmode": "=!4"
+      },
+      "events": [
+        {
+          "event": "brick",
+          "action": 1,
+          "data": 1,
+          "message": ""
+        }
+      ],
+      "categories": {
+        "Consumables": 5
+      },
+      "stores": [
+        "Ammo Depots"
+      ]
+    },
+    {
+      "name": "EMP Field",
+      "short_description": "Disables enemy recharge.",
+      "long_description": "",
+      "buy_price": 2000,
+      "sell_price": 1000,
+      "exp_required": 4000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Field": 1
+      },
+      "properties": {
+        "field": 2
+      },
+      "events": [
+        {
+          "event": "empfield",
+          "action": 1,
+          "data": 1,
+          "message": ""
+        }
+      ],
+      "categories": {
+        "Consumables": 7
+      },
+      "stores": [
+        "Ammo Depots"
+      ]
+    },
+    {
+      "name": "Lightning Field",
+      "short_description": "Electrical damage field.",
+      "long_description": "",
+      "buy_price": 2500,
+      "sell_price": 1000,
+      "exp_required": 4000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Field": 1
+      },
+      "properties": {
+        "field": 1
+      },
+      "events": [
+        {
+          "event": "lightning",
+          "action": 1,
+          "data": 1,
+          "message": ""
+        }
+      ],
+      "categories": {
+        "Consumables": 8
+      },
+      "stores": [
+        "Ammo Depots"
+      ]
+    },
+    {
+      "name": "Coffin Maker",
+      "short_description": "Deadly field.",
+      "long_description": "",
+      "buy_price": 3500,
+      "sell_price": 1000,
+      "exp_required": 4000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Field": 1
+      },
+      "properties": {
+        "field": 16
+      },
+      "events": [
+        {
+          "event": "coffin",
+          "action": 1,
+          "data": 1,
+          "message": ""
+        }
+      ],
+      "categories": {
+        "Consumables": 9
+      },
+      "stores": [
+        "Ammo Depots"
+      ]
+    },
+    {
+      "name": "Searing Heat",
+      "short_description": "Burn field.",
+      "long_description": "",
+      "buy_price": 4000,
+      "sell_price": 1000,
+      "exp_required": 4000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Field": 1
+      },
+      "properties": {
+        "field": 4
+      },
+      "events": [
+        {
+          "event": "searing",
+          "action": 1,
+          "data": 1,
+          "message": ""
+        }
+      ],
+      "categories": {
+        "Consumables": 10
+      },
+      "stores": [
+        "Ammo Depots"
+      ]
+    },
+    {
+      "name": "Thorstorm",
+      "short_description": "Rain fire from the heavens",
+      "long_description": "Stores Thor's Hammers for periodic use or a major siege",
+      "buy_price": 75000,
+      "sell_price": 50000,
+      "exp_required": 7500,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 2,
+      "delay_write": false,
+      "ammo": "Thor's Hammer",
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Mount": 1,
+        "Thor": -6
+      },
+      "properties": {
+        "thormax": 6
+      },
+      "events": [],
+      "categories": {
+        "Mounts": 11
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Fortress Bricks",
+      "short_description": "Sustained wall system.",
+      "long_description": "",
+      "buy_price": 0,
+      "sell_price": 1000,
+      "exp_required": 9000,
+      "ships_allowed": [],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Brick": 2,
+        "Relic": 1
+      },
+      "properties": {
+        "brick": 15,
+        "brickmax": "=!15",
+        "brickspan": "=!5",
+        "brickmode": "=!2"
+      },
+      "events": [
+        {
+          "event": "init",
+          "action": 4,
+          "data": 14,
+          "message": "You have fifteen bricks at your disposal!"
+        },
+        {
+          "event": "brick",
+          "action": 6,
+          "data": 1,
+          "message": ""
+        },
+        {
+          "event": "datazero",
+          "action": 1,
+          "data": 1,
+          "message": "Fortress Bricks lost!"
+        },
+        {
+          "event": "death",
+          "action": 1,
+          "data": 1,
+          "message": "Fortress Bricks lost!"
+        }
+      ],
+      "categories": {
+        "Consumables": 12
+      },
+      "stores": [
+        "Ammo Depots"
+      ]
+    },
+    {
+      "name": "Revival Module",
+      "short_description": "Restocks your ship.",
+      "long_description": "Fully replenishes your ship on use. Can be used twice. In the right circumstances, can bypass certain death.",
+      "buy_price": 0,
+      "sell_price": 1000,
+      "exp_required": 5000,
+      "ships_allowed": [
+        3,
+        4,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Brick": 1
+      },
+      "properties": {
+        "brick": 2,
+        "dontbrick": 1
+      },
+      "events": [
+        {
+          "event": "brick",
+          "action": 8,
+          "data": 1,
+          "message": ""
+        },
+        {
+          "event": "brick",
+          "action": 3,
+          "data": -14,
+          "message": ""
+        },
+        {
+          "event": "datazero",
+          "action": 1,
+          "data": 1,
+          "message": "Revival Module has run out of charges!"
+        },
+        {
+          "event": "brick",
+          "action": 6,
+          "data": 1,
+          "message": "One charge used!"
+        },
+        {
+          "event": "init",
+          "action": 4,
+          "data": 2,
+          "message": "Revival Module has two charges!"
+        }
+      ],
+      "categories": {
+        "Consumables": 2
+      },
+      "stores": [
+        "Ammo Depots"
+      ]
+    },
+    {
+      "name": "Opalus Relay",
+      "short_description": "Shadow.",
+      "long_description": "",
+      "buy_price": 0,
+      "sell_price": 1000,
+      "exp_required": 9000,
+      "ships_allowed": [],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Relic": 1
+      },
+      "properties": {
+        "bombdelaypct": 30,
+        "bombenergypct": 30,
+        "extrabombcount": 1
+      },
+      "events": [
+        {
+          "event": "death",
+          "action": 1,
+          "data": 1,
+          "message": "Opalus Relay lost!"
+        }
+      ],
+      "categories": {
+        "Consumables": 13
+      },
+      "stores": [
+        "Ammo Depots"
+      ]
+    },
+    {
+      "name": "Shell",
+      "short_description": "Reward for Parasite.",
+      "long_description": "Once a Parasite has grown tired of a particular host ship, it leaves behind this valuable Shell.",
+      "buy_price": 0,
+      "sell_price": 10000,
+      "exp_required": 0,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "???": 1
+      },
+      "properties": {
+        "adcooldown": -500,
+        "stealthenergy": -50,
+        "bulletenergypct": -5,
+        "xradarenergy": -50,
+        "antienergy": -50,
+        "explodepixels": -2,
+        "bombenergypct": -5,
+        "jittertime": -22,
+        "mineenergypct": -5,
+        "multienergypct": -5,
+        "cloakenergy": -50
+      },
+      "events": [],
+      "categories": {
+        "Hidden": 1
+      },
+      "stores": []
+    },
+    {
+      "name": "Molecular Cover",
+      "short_description": "Reward for Nanomite.",
+      "long_description": "A passive Nanomite Swarm that absorbs the energy of incoming weapons to maintain itself.",
+      "buy_price": 0,
+      "sell_price": 20000,
+      "exp_required": 0,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "???": 1,
+        "Armor": 1
+      },
+      "properties": {
+        "bombdamage": -20,
+        "adcooldown": -1000,
+        "bombenergypct": -10,
+        "bulletenergypct": -10,
+        "bulletdamage": -6,
+        "bulletdamageup": -2,
+        "explodepixels": -10,
+        "jittertime": -22,
+        "mineenergypct": -10,
+        "multienergypct": -10,
+        "recharge": 10
+      },
+      "events": [],
+      "categories": {
+        "Hidden": 2
+      },
+      "stores": []
+    },
+    {
+      "name": "Cobalt Warhead Mk. 2",
+      "short_description": "Devastating explosion",
+      "long_description": "The bomb detonates at the site of death",
+      "buy_price": 165000,
+      "sell_price": 1,
+      "exp_required": 15000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {},
+      "properties": {},
+      "events": [
+        {
+          "event": "death",
+          "action": 9,
+          "data": 150,
+          "message": ""
+        },
+        {
+          "event": "death",
+          "action": 1,
+          "data": 1,
+          "message": "Cobalt Warhead activated!"
+        },
+        {
+          "event": "add",
+          "action": 8,
+          "data": 0,
+          "message": ""
+        }
+      ],
+      "categories": {
+        "Consumables": 14
+      },
+      "stores": [
+        "Ammo Depots"
+      ]
+    },
+    {
+      "name": "Ball and Chain",
+      "short_description": "Bonus item for PRO players.",
+      "long_description": "Bonus item for PRO players.",
+      "buy_price": 0,
+      "sell_price": 0,
+      "exp_required": 0,
+      "ships_allowed": [],
+      "max": 99,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {},
+      "properties": {
+        "bulletdamageup": 4,
+        "maxspeed": -2,
+        "bulletdamage": 8,
+        "maxthrust": -2,
+        "energy": -30,
+        "burstmax": -1,
+        "turretlevel": -1,
+        "repelmax": -1,
+        "thrust": -3,
+        "speed": -3,
+        "recharge": -30
+      },
+      "events": [],
+      "categories": {
+        "Hidden": 3
+      },
+      "stores": []
+    },
+    {
+      "name": "Salvo",
+      "short_description": "Fast firing but inefficient.",
+      "long_description": "Fast firing but inefficient.",
+      "buy_price": 30000,
+      "sell_price": 22500,
+      "exp_required": 3000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Bomb": 1
+      },
+      "properties": {
+        "bombenergy": "=350",
+        "maxmines": "=4",
+        "bomblevel": 1,
+        "minedelay": "=145",
+        "mineenergy": "=250",
+        "bombdelay": "=87"
+      },
+      "events": [],
+      "categories": {
+        "Bombs": 7
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Power Limiter",
+      "short_description": "Limits a reactor's output",
+      "long_description": "Limits a reactor's output to prevent overloading",
+      "buy_price": 1,
+      "sell_price": 1,
+      "exp_required": 0,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 255,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": false,
+      "resend_sets": false,
+      "types": {
+        "Special": 1
+      },
+      "properties": {
+        "energy": -5
+      },
+      "events": [],
+      "categories": {
+        "Hidden": 127
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Chaos Field",
+      "short_description": "Disruption field.",
+      "long_description": "Creates a field which will shove enemies inside of it and generally disrupt their perception of reality. Requires a Field Generator.",
+      "buy_price": 1500,
+      "sell_price": 1000,
+      "exp_required": 4000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": false,
+      "resend_sets": false,
+      "types": {
+        "Field": 1
+      },
+      "properties": {
+        "field": 8
+      },
+      "events": [
+        {
+          "event": "chaosfield",
+          "action": 1,
+          "data": 1,
+          "message": ""
+        }
+      ],
+      "categories": {
+        "Consumables": 6
+      },
+      "stores": [
+        "Ammo Depots"
+      ]
+    },
+    {
+      "name": "Flash Drive",
+      "short_description": "[S] Unsurpassed acceleration",
+      "long_description": "The Flash Drive allows a ship to change velocity very effectively.",
+      "buy_price": 90000,
+      "sell_price": 54000,
+      "exp_required": 8700,
+      "ships_allowed": [
+        1,
+        2,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Signature": 1,
+        "Sublight": 1
+      },
+      "properties": {
+        "thrust": 9,
+        "maxthrust": 7,
+        "afterburner": -10,
+        "speed": 3
+      },
+      "events": [],
+      "categories": {
+        "Sublight Engines": 12
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Shrap Booster",
+      "short_description": "Shrapnel enhancer.",
+      "long_description": "Increases effectiveness of shrapnel.",
+      "buy_price": 50000,
+      "sell_price": 37500,
+      "exp_required": 3500,
+      "ships_allowed": [
+        2,
+        4,
+        6
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Gun": 1
+      },
+      "properties": {
+        "bulletenergy": "=39",
+        "initialbounty": -2,
+        "bombenergypct": 10,
+        "multifire": 1,
+        "bounce": 1,
+        "gunlevel": 3,
+        "bombdelaypct": 5,
+        "shraplevel": 1,
+        "bulletdelay": "=45"
+      },
+      "events": [],
+      "categories": {
+        "Guns": 10
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Warp Disruptor",
+      "short_description": "Prevents warping.",
+      "long_description": "Gives you antiwarp capabilities to prevent enemies from warping away.",
+      "buy_price": 2000,
+      "sell_price": 1500,
+      "exp_required": 100,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Sensor": 1
+      },
+      "properties": {
+        "antiwarp": 1
+      },
+      "events": [],
+      "categories": {
+        "Sensors": 1
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Sharppinger",
+      "short_description": "[S] Ancient classic.",
+      "long_description": "Ancient classic.",
+      "buy_price": 85000,
+      "sell_price": 51000,
+      "exp_required": 7500,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Gun": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "bulletenergy": "=19",
+        "gunlevel": 2,
+        "bulletdelay": "=16"
+      },
+      "events": [],
+      "categories": {
+        "Guns": 15
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Old Shrap Multi",
+      "short_description": "Refund Item.",
+      "long_description": "Refund Item. ?buy Shrap Multiplier instead.",
+      "buy_price": 0,
+      "sell_price": 50000,
+      "exp_required": 4000,
+      "ships_allowed": [
+        2,
+        4,
+        6
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Equipment": 1
+      },
+      "properties": {},
+      "events": [],
+      "categories": {
+        "Hidden": 8
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Naquadah Gen.",
+      "short_description": "Balanced but unstable.",
+      "long_description": "Balanced but unstable reactor; very weak in bases.",
+      "buy_price": 55000,
+      "sell_price": 41250,
+      "exp_required": 3000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Reactor": 1
+      },
+      "properties": {
+        "bombdamage": 60,
+        "bulletdamageup": 1,
+        "bulletdamage": 2,
+        "ebombdamage": 325,
+        "energy": 50,
+        "jittertime": 25,
+        "xradarenergy": 100,
+        "antienergy": 75,
+        "explodepixels": 6,
+        "burstdamage": 70,
+        "afterburner": 65,
+        "recharge": 45
+      },
+      "events": [],
+      "categories": {
+        "Reactor Plants": 7
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Shrap Multiplier",
+      "short_description": "Increases shrapnel count.",
+      "long_description": "Increases shrapnel count.",
+      "buy_price": 50000,
+      "sell_price": 37500,
+      "exp_required": 4000,
+      "ships_allowed": [
+        3,
+        4,
+        5
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Equipment": 1
+      },
+      "properties": {
+        "shraprate": 2,
+        "bombdelaypct": 10,
+        "bombenergypct": 10
+      },
+      "events": [],
+      "categories": {
+        "Equipment": 8
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Glow Cover",
+      "short_description": "Active armor.",
+      "long_description": "Draws energy from reactors to provide enhanced protection.",
+      "buy_price": 45000,
+      "sell_price": 33750,
+      "exp_required": 2650,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Armor": 1
+      },
+      "properties": {
+        "bombdamage": -86,
+        "bulletdamageup": -13,
+        "bulletdamage": -26,
+        "energy": -10,
+        "burstdamage": -17,
+        "recharge": -10
+      },
+      "events": [],
+      "categories": {
+        "Armor": 5
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Solid Neutronium",
+      "short_description": "[S] Ultimate heavy armor.",
+      "long_description": "Heavy but very effective armor.",
+      "buy_price": 84000,
+      "sell_price": 50400,
+      "exp_required": 9000,
+      "ships_allowed": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Armor": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "bombdamage": -125,
+        "bulletdamageup": -20,
+        "maxspeed": -1,
+        "bulletdamage": -40,
+        "ebombdamage": -40,
+        "ebombtime": -20,
+        "rocketthrust": -5,
+        "rocketspeed": -750,
+        "maxthrust": -1,
+        "thrust": -2,
+        "burstdamage": -16,
+        "speed": -2,
+        "rotation": -2
+      },
+      "events": [],
+      "categories": {
+        "Armor": 7
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Positron Gun",
+      "short_description": "[S] Efficient high damage bounce",
+      "long_description": "Delivers efficient high damage bounce bullets.",
+      "buy_price": 70000,
+      "sell_price": 42000,
+      "exp_required": 6000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Gun": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "gunlevel": 3,
+        "bulletenergy": "=20",
+        "initialbounty": -1,
+        "bulletdelay": "=22",
+        "bounce": 1
+      },
+      "events": [],
+      "categories": {
+        "Guns": 12
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Proton Beam",
+      "short_description": "[S] Powerful high efficiency.",
+      "long_description": "Powerful high efficiency.",
+      "buy_price": 80000,
+      "sell_price": 48000,
+      "exp_required": 7000,
+      "ships_allowed": [
+        1,
+        3,
+        5
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Gun": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "gunlevel": 3,
+        "bulletenergy": "=18",
+        "bulletdelay": "=20"
+      },
+      "events": [],
+      "categories": {
+        "Guns": 14
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Pea Shooter",
+      "short_description": "Rapid bounce bullet spam.",
+      "long_description": "Rapid bounce bullet spam.",
+      "buy_price": 10000,
+      "sell_price": 7500,
+      "exp_required": 500,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Gun": 1
+      },
+      "properties": {
+        "gunlevel": 1,
+        "bulletenergy": "=33",
+        "initialbounty": -1,
+        "bulletdelay": "=16",
+        "bounce": 1
+      },
+      "events": [],
+      "categories": {
+        "Guns": 4
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Beam Array",
+      "short_description": "Basic bullet flooding.",
+      "long_description": "Floods an area for guaranteed and weak, but sustained, damage. Weak to EMPs.",
+      "buy_price": 22000,
+      "sell_price": 16500,
+      "exp_required": 1000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Gun": 1
+      },
+      "properties": {
+        "bulletenergy": "=26",
+        "initialbounty": -2,
+        "ebombdamage": 60,
+        "multifire": 1,
+        "ebombtime": 45,
+        "multienergy": "=31",
+        "bounce": 1,
+        "gunlevel": 1,
+        "multidelay": "=22",
+        "explodepixels": 2,
+        "bulletdelay": "=22",
+        "jittertime": 20
+      },
+      "events": [],
+      "categories": {
+        "Guns": 6
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Evasion Shaper",
+      "short_description": "Stealth&cloak, but heavy drain.",
+      "long_description": "Offers both stealth & cloak in the same item, but increases the drain cost for both and reduces reactor recharge power.",
+      "buy_price": 80000,
+      "sell_price": 60000,
+      "exp_required": 5000,
+      "ships_allowed": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Equipment": 1
+      },
+      "properties": {
+        "stealth": 1,
+        "recharge": -5,
+        "stealthenergy": 50,
+        "cloak": 1,
+        "cloakenergy": 75
+      },
+      "events": [],
+      "categories": {
+        "Equipment": 9
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Oracle System",
+      "short_description": "[S] Ultimate detection.",
+      "long_description": "The Oracle System provides free x-radar, improves sensors, and provides other bonuses.",
+      "buy_price": 90000,
+      "sell_price": 54000,
+      "exp_required": 7000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Sensor": 1,
+        "Signature": 1
+      },
+      "properties": {
+        "bombdamage": -10,
+        "bulletdamageup": -7,
+        "bulletdamage": -4,
+        "xradarrange": 5000,
+        "mapzoom": 7,
+        "xradarenergy": "=!0",
+        "explodepixels": -4,
+        "xradar": 1,
+        "seemines": 1,
+        "energyviewing": 1,
+        "recharge": 15
+      },
+      "events": [],
+      "categories": {
+        "Sensors": 7
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Inertial Damper",
+      "short_description": "Flight stabilizers.",
+      "long_description": "Inertial Dampers use active sensors to fine-tune flight stability.",
+      "buy_price": 25000,
+      "sell_price": 18750,
+      "exp_required": 2000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Sensor": 1
+      },
+      "properties": {
+        "maxspeed": 1,
+        "turretspeed": -250,
+        "turretthrust": -2,
+        "rotation": 1,
+        "speed": 1,
+        "jittertime": -50
+      },
+      "events": [],
+      "categories": {
+        "Sensors": 5
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Test Item",
+      "short_description": "Test Item",
+      "long_description": "Test Item",
+      "buy_price": 0,
+      "sell_price": 1,
+      "exp_required": 99999,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 99,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Repel Mount": 1
+      },
+      "properties": {
+        "antiwarp": 2
+      },
+      "events": [],
+      "categories": {
+        "Hidden": 4
+      },
+      "stores": []
+    },
+    {
+      "name": "Extra Signature",
+      "short_description": "Remarkable capacity.",
+      "long_description": "Grants an extra signature slot.",
+      "buy_price": 0,
+      "sell_price": 3000000,
+      "exp_required": 16000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Alien Tech": 1,
+        "Capacity": 1,
+        "Signature": -1
+      },
+      "properties": {},
+      "events": [],
+      "categories": {
+        "Alien Technology": 10
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Burst",
+      "short_description": "Multi-directional attack",
+      "long_description": "Shoots powerful bullets in all directions",
+      "buy_price": 0,
+      "sell_price": 0,
+      "exp_required": 0,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 255,
+      "delay_write": true,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": false,
+      "types": {
+        "Ammunition": 1,
+        "Burst": 1
+      },
+      "properties": {
+        "burst": 1
+      },
+      "events": [
+        {
+          "event": "burst",
+          "action": 12,
+          "data": 22,
+          "message": ""
+        },
+        {
+          "event": "burst",
+          "action": 1,
+          "data": 1,
+          "message": ""
+        }
+      ],
+      "categories": {
+        "Ammunition": 0
+      },
+      "stores": []
+    },
+    {
+      "name": "Repel",
+      "short_description": "Pushes enemies away",
+      "long_description": "Creates a forcefield, temporarily pushing enemies away",
+      "buy_price": 0,
+      "sell_price": 0,
+      "exp_required": 0,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 255,
+      "delay_write": true,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": false,
+      "types": {
+        "Ammunition": 1,
+        "Repel": 1
+      },
+      "properties": {
+        "repel": 1
+      },
+      "events": [
+        {
+          "event": "repel",
+          "action": 1,
+          "data": 1,
+          "message": ""
+        },
+        {
+          "event": "repel",
+          "action": 12,
+          "data": 21,
+          "message": ""
+        }
+      ],
+      "categories": {
+        "Ammunition": 0
+      },
+      "stores": []
+    },
+    {
+      "name": "Brick",
+      "short_description": "Creates walls for enemy ships",
+      "long_description": "Creates walls for enemy ships",
+      "buy_price": 0,
+      "sell_price": 0,
+      "exp_required": 0,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 255,
+      "delay_write": true,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": false,
+      "types": {
+        "Ammunition": 1,
+        "Brick": 1
+      },
+      "properties": {
+        "brick": 1
+      },
+      "events": [
+        {
+          "event": "brick",
+          "action": 1,
+          "data": 1,
+          "message": ""
+        },
+        {
+          "event": "brick",
+          "action": 12,
+          "data": 26,
+          "message": ""
+        }
+      ],
+      "categories": {
+        "Ammunition": 0
+      },
+      "stores": []
+    },
+    {
+      "name": "Decoy",
+      "short_description": "Creates a decoy",
+      "long_description": "Creates a decoy to throw off enemies",
+      "buy_price": 0,
+      "sell_price": 0,
+      "exp_required": 0,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 255,
+      "delay_write": true,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": false,
+      "types": {
+        "Ammunition": 1,
+        "Decoy": 1
+      },
+      "properties": {
+        "decoy": 1
+      },
+      "events": [
+        {
+          "event": "decoy",
+          "action": 1,
+          "data": 1,
+          "message": ""
+        },
+        {
+          "event": "decoy",
+          "action": 12,
+          "data": 23,
+          "message": ""
+        }
+      ],
+      "categories": {
+        "Ammunition": 0
+      },
+      "stores": []
+    },
+    {
+      "name": "Portal",
+      "short_description": "Creates a temporary warp point",
+      "long_description": "Creates a temporary, one-time use, warp point.",
+      "buy_price": 0,
+      "sell_price": 0,
+      "exp_required": 0,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 255,
+      "delay_write": true,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": false,
+      "types": {
+        "Ammunition": 1,
+        "Portal": 1
+      },
+      "properties": {
+        "portal": 1
+      },
+      "events": [],
+      "categories": {
+        "Ammunition": 0
+      },
+      "stores": []
+    },
+    {
+      "name": "Rocket",
+      "short_description": "Rapid acceleration",
+      "long_description": "Rapidly thrusts your ship forward",
+      "buy_price": 0,
+      "sell_price": 0,
+      "exp_required": 0,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 255,
+      "delay_write": true,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": false,
+      "types": {
+        "Ammunition": 1,
+        "Rocket": 1
+      },
+      "properties": {
+        "rocket": 1
+      },
+      "events": [],
+      "categories": {
+        "Ammunition": 0
+      },
+      "stores": []
+    },
+    {
+      "name": "Thor's Hammer",
+      "short_description": "Powerful, incorporeal bomb",
+      "long_description": "A powerful, incorporeal bomb with a proximity trigger. Travels through walls.",
+      "buy_price": 0,
+      "sell_price": 0,
+      "exp_required": 0,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 255,
+      "delay_write": true,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": false,
+      "types": {
+        "Ammunition": 1,
+        "Thor": 1
+      },
+      "properties": {
+        "thor": 1
+      },
+      "events": [
+        {
+          "event": "thor",
+          "action": 1,
+          "data": 1,
+          "message": ""
+        },
+        {
+          "event": "thor",
+          "action": 12,
+          "data": 24,
+          "message": ""
+        }
+      ],
+      "categories": {
+        "Ammunition": 0
+      },
+      "stores": []
+    },
+    {
+      "name": "Repel Capacitor",
+      "short_description": "Stores several repels",
+      "long_description": "Allows repels to be gathered and stored for rapid release",
+      "buy_price": 75000,
+      "sell_price": 50000,
+      "exp_required": 7500,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 2,
+      "delay_write": false,
+      "ammo": "Repel",
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": false,
+      "resend_sets": false,
+      "types": {
+        "Mount": 1,
+        "Repel": -5
+      },
+      "properties": {
+        "repelmax": 5
+      },
+      "events": [],
+      "categories": {
+        "Mounts": 12
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Burst Capacitor",
+      "short_description": "Stores several bursts",
+      "long_description": "Allows bursts to be gathered and stored for rapid release",
+      "buy_price": 75000,
+      "sell_price": 50000,
+      "exp_required": 7500,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 2,
+      "delay_write": false,
+      "ammo": "Burst",
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": false,
+      "resend_sets": false,
+      "types": {
+        "Burst": -5,
+        "Mount": 1
+      },
+      "properties": {
+        "burstmax": 5
+      },
+      "events": [],
+      "categories": {
+        "Mounts": 13
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Energy Scanner",
+      "short_description": "View enemy energy levels",
+      "long_description": "Reveals the energy levels of all enemy ships",
+      "buy_price": 35000,
+      "sell_price": 30000,
+      "exp_required": 2000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": false,
+      "resend_sets": false,
+      "types": {
+        "Alien Tech": 1,
+        "Sensor": 1
+      },
+      "properties": {
+        "energyviewing": 1
+      },
+      "events": [],
+      "categories": {
+        "Alien Technology": 4
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Diamond Pod",
+      "short_description": "Improves HSD rewards",
+      "long_description": "Sacrifices EXP gains for additional HSD",
+      "buy_price": 1000000,
+      "sell_price": 50000,
+      "exp_required": 15000,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": false,
+      "resend_sets": false,
+      "types": {
+        "Alien Tech": 1,
+        "Capacity": 1
+      },
+      "properties": {
+        "exp_multiplier": -100,
+        "hsd_multiplier": 15
+      },
+      "events": [],
+      "categories": {
+        "Alien Technology": 12
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Training Pod",
+      "short_description": "Improves EXP rewards",
+      "long_description": "Restricts movement and HSD rewards to provide additional EXP",
+      "buy_price": 2500,
+      "sell_price": 2000,
+      "exp_required": 100,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": false,
+      "resend_sets": false,
+      "types": {
+        "Alien Tech": 1,
+        "Capacity": 1
+      },
+      "properties": {
+        "maxspeed": -1,
+        "maxthrust": -1,
+        "exp_multiplier": 35,
+        "hsd_multiplier": -75,
+        "thrust": -1,
+        "rotation": -1,
+        "speed": -1
+      },
+      "events": [],
+      "categories": {
+        "Alien Technology": 11
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Reward Restrictor",
+      "short_description": "Reduces rewards",
+      "long_description": "Reduces rewards",
+      "buy_price": 0,
+      "sell_price": 0,
+      "exp_required": 0,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 255,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": false,
+      "resend_sets": false,
+      "types": {
+        "Special": 1
+      },
+      "properties": {
+        "hsd_multiplier": -100,
+        "exp_multiplier": -100
+      },
+      "events": [],
+      "categories": {
+        "Hidden": 10
+      },
+      "stores": []
+    },
+    {
+      "name": "Jump Beacon",
+      "short_description": "[S] Advanced summoning device.",
+      "long_description": "Allows for summoning of other lancs.  Beacon lancs cannot be summoned by other Beacon lancs.  Beacon lancs also cannot \"vanilla\" attach to ANY lanc.",
+      "buy_price": 500000,
+      "sell_price": 300000,
+      "exp_required": 15000,
+      "ships_allowed": [
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": false,
+      "resend_sets": false,
+      "types": {
+        "FTL": 1,
+        "Prototype": 1,
+        "Signature": 1,
+        "Summon": 1
+      },
+      "properties": {
+        "notsummonable": 1,
+        "attachmask": -64,
+        "summonmask": 255,
+        "summonflags": 1,
+        "summon": 1
+      },
+      "events": [],
+      "categories": {
+        "Alien Technology": 5
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Infiltrator",
+      "short_description": "Enhanced attaching.",
+      "long_description": "Allows sharks to attach to more ships.",
+      "buy_price": 80000,
+      "sell_price": 60000,
+      "exp_required": 10000,
+      "ships_allowed": [
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": false,
+      "resend_sets": false,
+      "types": {
+        "FTL": 1
+      },
+      "properties": {
+        "attachmask": "=124"
+      },
+      "events": [],
+      "categories": {
+        "FTL Engines": 4
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Turret Platform",
+      "short_description": "Specialized turretting.",
+      "long_description": "Allows up to four ships to turret.",
+      "buy_price": 50000,
+      "sell_price": 37500,
+      "exp_required": 12000,
+      "ships_allowed": [
+        7
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Mount": 1,
+        "Prototype": 1
+      },
+      "properties": {
+        "turretlimit": 4
+      },
+      "events": [],
+      "categories": {
+        "Mounts": 9
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "Decoy Capacitor",
+      "short_description": "Stores several decoys",
+      "long_description": "Allows decoys to be gathered and stored for rapid release",
+      "buy_price": 60000,
+      "sell_price": 40000,
+      "exp_required": 7500,
+      "ships_allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 2,
+      "delay_write": false,
+      "ammo": "Decoy",
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": false,
+      "resend_sets": false,
+      "types": {
+        "Decoy": -5,
+        "Mount": 1
+      },
+      "properties": {
+        "decoymax": 5
+      },
+      "events": [],
+      "categories": {
+        "Mounts": 14
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    }
+  ]
+}
