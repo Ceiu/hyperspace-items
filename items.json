@@ -1,4 +1,34 @@
 {
+  "types": {
+    "???": 1,
+    "Alien Tech": 1,
+    "Ammunition": 255,
+    "Armor": 1,
+    "Bomb": 1,
+    "Brick": 0,
+    "Burst": 0,
+    "Capacity": 1,
+    "Decoy": 0,
+    "Equipment": 2,
+    "FTL": 1,
+    "Field": 1,
+    "Gun": 1,
+    "Mount": 2,
+    "Portal": 0,
+    "Prototype": 1,
+    "Reactor": 1,
+    "Relic": 1,
+    "Repel": 0,
+    "Repel Mount": 2,
+    "Rocket": 0,
+    "Sensor": 2,
+    "Signature": 1,
+    "Special": 255,
+    "Sublight": 1,
+    "Summon": 1,
+    "Thor": 0,
+    "Turret": 1
+  },
   "items": [
     {
       "name": "Gamma Ray",
@@ -1129,11 +1159,11 @@
       ]
     },
     {
-      "name": "Overthruster",
+      "name": "OT Refund",
       "short_description": "High rotation drive.",
       "long_description": "Allows for rapid turns and maneuvers.",
-      "buy_price": 21000,
-      "sell_price": 15750,
+      "buy_price": 0,
+      "sell_price": 21000,
       "exp_required": 650,
       "ships_allowed": [
         1,
@@ -1155,14 +1185,7 @@
       "types": {
         "Sublight": 1
       },
-      "properties": {
-        "maxspeed": 1,
-        "maxthrust": 3,
-        "thrust": 4,
-        "rotation": 7,
-        "afterburner": -15,
-        "speed": 1
-      },
+      "properties": {},
       "events": [],
       "categories": {
         "Sublight Engines": 4
@@ -6200,6 +6223,47 @@
       "events": [],
       "categories": {
         "Mounts": 14
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "OverThruster",
+      "short_description": "High rotation drive.",
+      "long_description": "Allows for rapid turns and maneuvers.",
+      "buy_price": 16000,
+      "sell_price": 12000,
+      "exp_required": 650,
+      "ships_allowed": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": true,
+      "resend_sets": true,
+      "types": {
+        "Sublight": 1
+      },
+      "properties": {
+        "maxspeed": 1,
+        "maxthrust": 3,
+        "thrust": 4,
+        "rotation": 7,
+        "afterburner": -15,
+        "speed": 1
+      },
+      "events": [],
+      "categories": {
+        "Sublight Engines": 4
       },
       "stores": [
         "Center Safe"
