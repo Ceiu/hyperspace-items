@@ -10,8 +10,9 @@ import io
 import json
 import mysql.connector
 from mysql.connector import errorcode
-from optparse import OptionParser
+from optparse import OptionParser, BadOptionError
 import os.path
+import re
 import sys
 
 
@@ -25,9 +26,31 @@ LEGACY_CATEGORY_DESCRIPTION = "Legacy equipment which is no longer available"
 # - Add transactions. We don't want to die halfway through a massive import and break stuff
 
 
+
+
+# Non-whiny OptionParser, stolen from http://stackoverflow.com/a/13870300
+class PassThroughOptionParser(OptionParser):
+  def _process_long_opt(self, rargs, values):
+    try:
+      OptionParser._process_long_opt(self, rargs, values)
+    except BadOptionError, err:
+      self.largs.append(err.opt_str)
+
+  def _process_short_opts(self, rargs, values):
+    try:
+      OptionParser._process_short_opts(self, rargs, values)
+    except BadOptionError, err:
+      self.largs.append(err.opt_str)
+
+
+
+
 def debug(message):
   if DEBUG_OUTPUT:
     print(message)
+
+def printerr(message):
+  print(message, file=sys.stderr)
 
 def safe_bool(input, default=False):
   try:
@@ -47,11 +70,18 @@ def safe_int(input, default=0):
 
 def safe_str(input, default=None):
   try:
-    return str(input)
+    return str(input) if input is not None else default
   except ValueError:
     return default
   except TypeError:
     return default
+
+def safe_case_haskey(map, value):
+  for ikey, ival in map.items():
+    if (ikey.lower() == key.lower() if isinstance(ikey, basestring) and isinstance(key, basestring) else ikey == key):
+      return True
+
+  return False
 
 def safe_case_get(map, key, func=None, default=None):
   for ikey, ival in map.items():
@@ -74,6 +104,64 @@ def safe_case_contains(list, value):
       return True
 
   return False
+
+def rcomp(source, update):
+  def rcomp_impl(source, update):
+    if isinstance(source, collections.Mapping):
+      if not isinstance(update, collections.Mapping):
+        return False
+
+      for skey, sval in source.items():
+        found = False
+
+        for ukey, uval in update.items():
+          if skey == ukey:
+            found = True
+            if not rcomp_impl(sval, uval):
+              return False
+
+            break
+
+        if not found:
+          return False
+
+    elif isinstance(source, collections.Sequence) and not isinstance(source, basestring):
+      if not (isinstance(update, collections.Sequence) and not isinstance(update, basestring)):
+        return False
+
+      for sval in source:
+        found = False
+
+        for uval in update:
+          if rcomp_impl(sval, uval):
+            found = True
+            break
+
+        if not found:
+          return False
+
+    else:
+      return source == update
+
+    return True
+
+  return rcomp_impl(source, update) and rcomp_impl(update, source)
+
+
+def standardize_types(types):
+  if not isinstance(types, collections.Mapping):
+    return None
+
+  stdtypes = OrderedDict()
+
+  for type, max in sorted(types.items()):
+    type = safe_str(type)
+    max = safe_int(max, None)
+
+    if type is not None and max is not None:
+      stdtypes[type] = max
+
+  return stdtypes
 
 
 def standardize_item(item):
@@ -191,7 +279,7 @@ class ItemDB:
       print("No such method: %s" % method_name, file=sys.stderr)
 
 
-  def execute_query(self, query, params):
+  def execute_query(self, query, params=None):
     cursor = self.dbc.cursor()
     cursor.execute(query, params)
 
@@ -200,7 +288,7 @@ class ItemDB:
 
     return results
 
-  def execute_update(self, statement, params):
+  def execute_update(self, statement, params=None):
     cursor = self.dbc.cursor()
     cursor.execute(statement, params)
 
@@ -209,7 +297,7 @@ class ItemDB:
 
     return results
 
-  def execute_insert(self, statement, params):
+  def execute_insert(self, statement, params=None):
     cursor = self.dbc.cursor()
     cursor.execute(statement, params)
 
@@ -266,6 +354,41 @@ class ItemDB:
 
     return None
 
+  def create_type(self, type, max=0):
+    type = safe_str(type)
+    max = safe_int(max, 0)
+    result = False
+
+    if type is not None:
+      if len(self.execute_query("SELECT id FROM hs_item_types WHERE name = %s", (type,))) == 0:
+        result = bool(self.execute_update("INSERT INTO hs_item_types(name, max) VALUES(%s, %s)", (type, max)))
+      else:
+        result = bool(self.execute_update("UPDATE hs_item_types SET max = %s WHERE name = %s", (max, type)))
+
+    return result
+
+  def delete_type(self, type_id):
+    if isinstance(type_id, basestring) and not type_id.isdigit():
+      type_id = self.get_type_id(type_id)
+    else:
+      type_id = safe_str(type_id)
+
+    result = False
+
+    if type_id is not None:
+      result = bool(self.execute_update("DELETE FROM hs_item_types WHERE id = %s", (type_id,)))
+      if result:
+        self.execute_update("DELETE FROM hs_item_type_assoc WHERE type_id = %s", (type_id,))
+
+    return result
+
+  def get_types(self):
+    types = {}
+    for (type, max) in self.execute_query("SELECT name, max FROM hs_item_types"):
+      types[type] = max
+
+    return OrderedDict(sorted(types.items()))
+
   def get_item_types(self, item_id):
     if isinstance(item_id, basestring) and not item_id.isdigit():
       item_id = self.get_item_id(item_id) or self.get_item_id(item_id, True)
@@ -283,7 +406,7 @@ class ItemDB:
 
     return OrderedDict(sorted(types.items()))
 
-  def add_item_type(self, item_id, type_id, count=1):
+  def add_type_to_item(self, item_id, type_id, count=1):
     if isinstance(item_id, basestring) and not item_id.isdigit():
       item_id = self.get_item_id(item_id) or self.get_item_id(item_id, True)
 
@@ -307,7 +430,7 @@ class ItemDB:
 
     return result
 
-  def remove_item_type(self, item_id, type_id):
+  def remove_type_from_item(self, item_id, type_id):
     if isinstance(item_id, basestring) and not item_id.isdigit():
       item_id = self.get_item_id(item_id) or self.get_item_id(item_id, True)
 
@@ -484,9 +607,9 @@ class ItemDB:
 
     return items
 
-  def add_category(self, category, description, hidden=False, order=None):
+  def add_category(self, category, description=None, hidden=False, order=None):
     category = safe_str(category)
-    description = safe_str(description)
+    description = safe_str(description, "")
     hidden = safe_bool(hidden)
 
     result = False
@@ -792,23 +915,42 @@ class ItemDB:
 
         # add item types
         for type, count in item["types"].items():
-          result = result and self.add_item_type(item_id, type, count)
+          result = result and self.add_type_to_item(item_id, type, count)
+          if not result:
+            debug("failed to insert type: %s" % type)
+            break
 
         # add item properties
-        for property, value in item["properties"].items():
-          result = result and self.add_item_property(item_id, property, value)
+        if result:
+          for property, value in item["properties"].items():
+            result = result and self.add_item_property(item_id, property, value)
+            if not result:
+              debug("failed to insert property: %s" % property)
+              break
 
         # add item events
-        for event in item["events"]:
-          result = result and self.add_item_event(item_id, event["event"], event["action"], event["data"], event["message"])
+        if result:
+          for event in item["events"]:
+            result = result and self.add_item_event(item_id, event["event"], event["action"], event["data"], event["message"])
+            if not result:
+              debug("failed to insert event")
+              break
 
         # add item to categories
-        for category, order in item["categories"].items():
-          result = result and self.add_item_to_category(item_id, category, order)
+        if result:
+          for category, order in item["categories"].items():
+            result = result and self.add_item_to_category(item_id, category, order)
+            if not result:
+              debug("failed to insert category: %s" % category)
+              break
 
         # add item to stores
-        for store in item["stores"]:
-          result = result and self.add_item_to_store(item_id, store)
+        if result:
+          for store in item["stores"]:
+            result = result and self.add_item_to_store(item_id, store)
+            if not result:
+              debug("failed to insert store: %s" % store)
+              break
 
       if result:
         self._commit_transaction()
@@ -824,7 +966,7 @@ class ItemDB:
 
     db_item = self.get_item(item_id)
     item = standardize_item(item)
-    result = False
+    change_count = 0
 
     if db_item is not None and item is not None and item["name"] is not None:
       self._start_transaction()
@@ -838,62 +980,62 @@ class ItemDB:
       ammo_id = self.get_item_id(item["ammo"]) or 0
 
       # insert base item info
-      result = bool(self.execute_update("""
+      change_count += self.execute_update("""
         UPDATE hs_items SET name = %s, short_description = %s, long_description = %s, buy_price = %s,
         sell_price = %s, exp_required = %s, ships_allowed = %s, max = %s, delay_write = %s,
         ammo = %s, needs_ammo = %s, min_ammo = %s, affects_sets = %s, resend_sets = %s
+        WHERE id = %s
       """, (item["name"], item["short_description"], item["long_description"], item["buy_price"],
         item["sell_price"], item["exp_required"], ships_mask, item["max"], item["delay_write"],
-        ammo_id, item["needs_ammo"], item["min_ammo"], item["affects_sets"], item["resend_sets"])
-      ))
-
-      item_id = self.get_item_id(item["name"])
+        ammo_id, item["needs_ammo"], item["min_ammo"], item["affects_sets"], item["resend_sets"],
+        item_id)
+      )
 
       # add item types
       for type, count in item["types"].items():
-        self.add_item_type(item_id, type, count)
+        change_count += int(self.add_type_to_item(item_id, type, count))
         safe_case_remove(db_item["types"], type)
 
       # remove absent types
-      for type in db_item["types"].items():
-        self.remove_item_type(item_id, type)
+      for type, count in db_item["types"].items():
+        change_count += int(self.remove_type_from_item(item_id, type))
 
       # add item properties
       for property, value in item["properties"].items():
-        self.add_item_property(item_id, property, value)
+        change_count += int(self.add_item_property(item_id, property, value))
         safe_case_remove(db_item["properties"], property)
 
-      for property in db_item["properties"].items():
-        self.remove_item_property(item_id, property)
+      for property, value in db_item["properties"].items():
+        change_count += int(self.remove_item_property(item_id, property))
 
       # add item events
       # impl note: we cheat a bit here by deleting all events and recreating them. Makes maintenance
       # a bit easier.
       for event in db_item["events"]:
-        self.delete_item_event(item_id, event["event"])
+        change_count += int(self.delete_item_event(item_id, event["event"]))
 
       for event in item["events"]:
-        self.add_item_event(item_id, event["event"], event["action"], event["data"], event["message"])
+        change_count += int(self.add_item_event(item_id, event["event"], event["action"], event["data"], event["message"]))
 
       # add item to categories
       for category, order in item["categories"].items():
-        self.add_item_to_category(item_id, category, order)
+        change_count += int(self.add_item_to_category(item_id, category, order))
         safe_case_remove(db_item["categories"], category)
 
-      for category in db_item["categories"].items():
-        self.remove_item_from_category(item_id, category)
+      for category, order in db_item["categories"].items():
+        change_count += int(self.remove_item_from_category(item_id, category))
 
       # add item to stores
       for store in item["stores"]:
-        self.add_item_to_store(item_id, store)
+        change_count += int(self.add_item_to_store(item_id, store))
 
       for store in db_item["stores"]:
         if not safe_case_contains(item["stores"], store):
-          self.remove_item_from_store(store)
+          change_count += int(self.remove_item_from_store(store))
 
       self._commit_transaction()
 
-    return result
+    return change_count > 0
 
 
   def delete_item(self, item_id):
@@ -960,7 +1102,7 @@ class ItemDB:
         cat_id = self.get_category_id(LEGACY_CATEGORY_NAME)
         if cat_id is None:
           if not self.add_category(LEGACY_CATEGORY_NAME, LEGACY_CATEGORY_DESCRIPTION, True):
-            print("ERROR: Unable to create legacy item category", file=sys.stderr) # uh oh
+            printerr("ERROR: Unable to create legacy item category") # uh oh
           else:
             cat_id = self.get_category_id("Legacy Equipment")
 
@@ -991,133 +1133,141 @@ class ItemDB:
     for item_id in self.get_item_ids():
       items.append(self.get_item(item_id))
 
+    db_data["types"] = self.get_types()
     db_data["items"] = items
 
     return db_data
 
 
-  def import_items(self, make_legacy=True, destructive=False):
+  def import_items(self, make_legacy=True, destructive=False, filter=None):
     """
     Imports and updates HS items from the JSON-formatted data received on stdin.
     If make_legacy is true, any items marked for update or deletion which are in used by players
     will be retained as a legacy item; allowing players to retain their current item stats.
     If destructive is true, any item which is absent from the provided data will be converted to
-    a legacy item, or deleted
+    a legacy item, or deleted.
+    If filter is set and is a valid regex, only items matching the expression will be imported.
     """
     make_legacy = safe_bool(make_legacy)
     destructive = safe_bool(destructive)
 
+    item_filter = None
 
-    def rcomp(source, update):
-      def rcomp_impl(source, update):
-        if isinstance(source, collections.Mapping):
-          if not isinstance(update, collections.Mapping):
-            return False
-
-          for skey, sval in source.items():
-            found = False
-
-            for ukey, uval in update.items():
-              if skey == ukey:
-                found = True
-                if not rcomp_impl(sval, uval):
-                  return False
-
-                break
-
-            if not found:
-              return False
-
-        elif isinstance(source, collections.Sequence) and not isinstance(source, basestring):
-          if not isinstance(update, collections.Sequence) and not isinstance(update, basestring):
-            return False
-
-          for sval in source:
-            found = False
-
-            for uval in update:
-              if rcomp_impl(sval, uval):
-                found = True
-                break
-
-            if not found:
-              return False
-
-        else:
-          return source == update
-
-        return True
-
-      return rcomp_impl(source, update) and rcomp_impl(update, source)
+    try:
+      if filter is not None:
+        item_filter = re.compile(safe_str(filter), re.IGNORECASE)
+    except re.error:
+      pass
 
 
     import_data = json.load(sys.stdin)
     existing_ids = self.get_item_ids()
     updated_ids = []
     import_items = []
+    import_types = None
 
-    offset = 0
+    processed = 0
     created = 0
     updated = 0
     removed = 0
     invalid = 0
     converted = 0
     skipped = 0
+    failed = 0
 
     # Get only the items, if we're provided a full HS JSON
-    if isinstance(import_data, collections.Mapping) and hasattr(import_data, "items"):
+    if isinstance(import_data, collections.Mapping) and "items" in import_data:
       import_items = import_data["items"]
+
+      if "types" in import_data:
+        import_types = standardize_types(import_data["types"])
     elif isinstance(import_data, collections.Sequence):
       import_items = import_data
     else:
       import_items = [import_data]
 
 
+    # Sync up types if they're provided
+    if isinstance(import_types, collections.Mapping):
+      existing = self.get_types()
+      present = []
+
+      if not rcomp(existing, import_types):
+        for type, max in import_types.items():
+          present.append(type)
+          self.create_type(type, max)
+
+        for type, max in existing.items():
+          if not safe_case_contains(present, type):
+            self.delete_type(type)
+
+    # TODO:
+    # Add item category synchronization here. Will be a tad messier than types
+
+
+
     for raw_item in import_items:
-      offset += 1
+      processed += 1
       # validate item, throwing it aside if it's bad
       item = standardize_item(raw_item)
 
       if not item or item["name"] is None:
         invalid += 1
-        print("Invalid item found at index %d" % offset, file=sys.stderr)
+        printerr("Invalid item found at index %d" % processed)
         continue
 
       db_item_id = self.get_item_id(item["name"])
-      db_item = self.get_item(db_item_id)
-
-      if (db_item):
+      if db_item_id is not None:
         updated_ids.append(db_item_id)
+
+      if item_filter is not None and not item_filter.match(item["name"]):
+        debug("Skipping filtered item: %s" % item["name"])
+        skipped += 1
+        continue
+
+      if db_item_id is not None:
+        db_item = self.get_item(db_item_id)
 
         # existing item; check if it changed...
         if rcomp(db_item, item):
-          debug("Skipping item: %s" % item["name"])
+          debug("Skipping unchanged item: %s" % item["name"])
           skipped += 1
           continue
 
         # check if we can just update the item directly
-        if not make_legacy:# or self.get_item_ship_count(db_item_id) < 1:
-          # Raw item update on the existing item. We'll fake an update by deleting the item,
-          # then re-adding it with the same id
+        if not make_legacy or self.get_item_ship_count(db_item_id) < 1:
+          # Raw, in-place update on an existing item
           debug("Updating item: %s" % item["name"])
-          self.update_item(db_item_id, item)
-          updated += 1
+          if self.update_item(db_item_id, item):
+            updated += 1
+          else:
+            printerr("ERROR: Unable to update existing item: %s" % item["name"])
+            failed += 1
 
         else:
-          # Bah. Convert it to a legacy item, I guess... Then just import the updated item as a new item.
+          # Convert it to a legacy item, I guess... Then just import the updated item as a new item.
           debug("Converting item to legacy item: %s" % item["name"])
-          self.convert_to_legacy(db_item_id)
+          if self.convert_to_legacy(db_item_id):
+            converted += 1
 
-          debug("Inserting new version of item: %s" % item["name"])
-          self.insert_item(item)
-          converted += 1
-          created += 1
+            debug("Inserting new version of item: %s" % item["name"])
+            if self.insert_item(item):
+              created += 1
+            else:
+              printerr("ERROR: Unable to create item: %s" % item["name"])
+              failed += 1
+          else:
+            printerr("ERROR: Unable to convert item to legacy: %s" % item["name"])
+            failed += 1
 
       else:
         # new item entirely; just import
         debug("Inserting item: %s" % item["name"])
-        self.insert_item(item)
-        created += 1
+        if self.insert_item(item):
+          created += 1
+        else:
+          printerr("ERROR: Unable to create new item: %s" % item["name"])
+          failed += 1
 
 
     # check if we need to remove items which were not in the update JSON
@@ -1140,13 +1290,14 @@ class ItemDB:
           removed += 1
 
     output = OrderedDict()
-    output["offset"] = offset
+    output["processed"] = processed
     output["created"] = created
     output["updated"] = updated
     output["removed"] = removed
     output["invalid"] = invalid
     output["converted"] = converted
     output["skipped"] = skipped
+    output["failed"] = failed
 
     return output
 
@@ -1159,11 +1310,11 @@ def main(argv):
       return dbc
     except mysql.connector.Error as e:
       if e.errno == errorcode.ER_ACCESS_DENIED_ERROR:
-        print("Invalid username and/or password", file=sys.stderr)
+        printerr("Invalid username and/or password")
       elif e.errno == errorcode.ER_BAD_DB_ERROR:
-        print("Database %s does not exist" % database, file=sys.stderr)
+        printerr("Database %s does not exist" % database)
       else:
-        print(e, file=sys.stderr)
+        printerr(e)
 
     return None
 
@@ -1175,7 +1326,7 @@ def main(argv):
 
     return None
 
-  parser = OptionParser()
+  parser = PassThroughOptionParser()
   parser.add_option("-a", "--arena", action="store", dest="arena_id", default="main")
   parser.add_option("--config", action="store", default=None)
   parser.add_option("--dbhost", action="store", default="localhost")
@@ -1190,12 +1341,12 @@ def main(argv):
     config = ConfigParser.RawConfigParser()
 
     if options.config not in config.read(options.config):
-      print("Unable to read configuration file: %s" % options.config)
+      printerr("Unable to read configuration file: %s" % options.config)
       return;
 
     section = find_section(config, ["hyperspace", "mysql"])
     if section is None:
-      print("Unable to find database configuration sections \"hyperspace\" or \"mysql\" in config file %s" % options.config, file=sys.stderr)
+      printerr("Unable to find database configuration sections \"hyperspace\" or \"mysql\" in config file %s" % options.config)
       return;
 
     options.dbhost = config.get(section, "hostname");
@@ -1238,10 +1389,10 @@ def main(argv):
         item_db._rollback_transaction()
 
       else:
-        print("ERROR: No such action: %s" % args[0], file=sys.stderr)
+        printerr("ERROR: No such action: %s" % args[0])
 
     else:
-      print("ERROR: Must specify an action to perform", file=sys.stderr)
+      printerr("ERROR: Must specify an action to perform")
 
     dbc.close()
 
