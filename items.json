@@ -1,6 +1,5 @@
 {
   "types": {
-    "???": 1,
     "Alien Tech": 1,
     "Ammunition": 255,
     "Armor": 1,
@@ -19,7 +18,6 @@
     "Reactor": 1,
     "Relic": 1,
     "Repel": 0,
-    "Repel Mount": 2,
     "Rocket": 0,
     "Sensor": 2,
     "Signature": 1,
@@ -640,9 +638,9 @@
         "maxmines": "=7",
         "prox": 1,
         "bomblevel": 1,
-        "minedelay": "=12",
         "initialbounty": -1,
         "mineenergy": "=120",
+        "minedelay": "=12",
         "bombdelay": "=175"
       },
       "events": [],
@@ -722,15 +720,15 @@
         "Bomb": 1
       },
       "properties": {
-        "bombenergy": "=280",
-        "maxmines": "=3",
-        "shrapnel": 3,
+        "bombenergy": 280,
+        "maxmines": 3,
+        "shrapnel": 2,
         "bomblevel": 1,
-        "minedelay": "=190",
-        "initialbounty": -3,
-        "mineenergy": "=310",
-        "shraplevel": "=3",
-        "bombdelay": "=140"
+        "initialbounty": -2,
+        "mineenergy": 310,
+        "minedelay": 190,
+        "shraplevel": 1,
+        "bombdelay": 140
       },
       "events": [],
       "categories": {
@@ -767,11 +765,11 @@
         "maxmines": "=8",
         "prox": 1,
         "bomblevel": 2,
-        "minedelay": "=155",
         "initialbounty": -4,
         "shrapnel": 3,
+        "minedelay": "=155",
+        "shraplevel": 2,
         "mineenergy": "=175",
-        "shraplevel": "=3",
         "bombdelay": "=180"
       },
       "events": [],
@@ -850,9 +848,9 @@
         "maxmines": "=3",
         "shrapnel": 3,
         "bomblevel": 2,
-        "minedelay": "=260",
         "initialbounty": -3,
         "mineenergy": "=350",
+        "minedelay": "=260",
         "shraplevel": "=3",
         "bombdelay": "=370"
       },
@@ -931,9 +929,9 @@
         "maxmines": "=3",
         "shrapnel": "=4",
         "bomblevel": 1,
-        "minedelay": "=200",
         "initialbounty": -4,
         "mineenergy": "=140",
+        "minedelay": "=200",
         "shraplevel": "=2",
         "bombdelay": "=135"
       },
@@ -972,14 +970,14 @@
       "properties": {
         "bombenergy": "=600",
         "maxmines": "=1",
-        "shrapnel": 5,
-        "bomblevel": 3,
         "prox": 1,
+        "bombdelay": "=400",
+        "bomblevel": 3,
         "initialbounty": -6,
-        "mineenergy": "=650",
+        "shrapnel": 5,
         "minedelay": "=450",
         "shraplevel": "=3",
-        "bombdelay": "=400"
+        "mineenergy": "=650"
       },
       "events": [],
       "categories": {
@@ -1188,7 +1186,7 @@
       "properties": {},
       "events": [],
       "categories": {
-        "Sublight Engines": 4
+        "Sublight Engines": 5
       },
       "stores": [
         "Center Safe"
@@ -1231,7 +1229,7 @@
       },
       "events": [],
       "categories": {
-        "Sublight Engines": 5
+        "Sublight Engines": 6
       },
       "stores": [
         "Center Safe"
@@ -1268,7 +1266,7 @@
       },
       "events": [],
       "categories": {
-        "Sublight Engines": 6
+        "Sublight Engines": 7
       },
       "stores": [
         "Center Safe"
@@ -1306,7 +1304,7 @@
       },
       "events": [],
       "categories": {
-        "Sublight Engines": 7
+        "Sublight Engines": 8
       },
       "stores": [
         "Center Safe"
@@ -1344,7 +1342,7 @@
       },
       "events": [],
       "categories": {
-        "Sublight Engines": 8
+        "Sublight Engines": 9
       },
       "stores": [
         "Center Safe"
@@ -1385,7 +1383,7 @@
       },
       "events": [],
       "categories": {
-        "Sublight Engines": 9
+        "Sublight Engines": 10
       },
       "stores": [
         "Center Safe"
@@ -1428,7 +1426,7 @@
       },
       "events": [],
       "categories": {
-        "Sublight Engines": 11
+        "Sublight Engines": 13
       },
       "stores": [
         "Center Safe"
@@ -1466,7 +1464,7 @@
       },
       "events": [],
       "categories": {
-        "Sublight Engines": 10
+        "Sublight Engines": 11
       },
       "stores": [
         "Center Safe"
@@ -1510,7 +1508,7 @@
       },
       "events": [],
       "categories": {
-        "Sublight Engines": 13
+        "Sublight Engines": 14
       },
       "stores": [
         "Center Safe"
@@ -2110,7 +2108,7 @@
       "properties": {},
       "events": [],
       "categories": {
-        "Armor": 5
+        "Armor": 6
       },
       "stores": [
         "Center Safe"
@@ -2151,7 +2149,7 @@
       },
       "events": [],
       "categories": {
-        "Armor": 6
+        "Armor": 8
       },
       "stores": [
         "Center Safe"
@@ -2183,7 +2181,7 @@
       "properties": {},
       "events": [],
       "categories": {
-        "Armor": 7
+        "Armor": 9
       },
       "stores": [
         "Center Safe"
@@ -2222,7 +2220,7 @@
       },
       "events": [],
       "categories": {
-        "Armor": 8
+        "Armor": 10
       },
       "stores": [
         "Center Safe"
@@ -2421,7 +2419,7 @@
       },
       "events": [],
       "categories": {
-        "Hidden": 1
+        "Hidden": 2
       },
       "stores": [
         "Center Safe"
@@ -2820,14 +2818,13 @@
       "affects_sets": true,
       "resend_sets": true,
       "types": {
-        "Mount": 1,
-        "Repel Mount": 1
+        "Mount": 1
       },
       "properties": {
         "rocketmax": 2,
-        "repel": 1,
         "repelmax": 1,
-        "rocket": 2
+        "rocket": 2,
+        "repel": 1
       },
       "events": [],
       "categories": {
@@ -2930,7 +2927,7 @@
         7,
         8
       ],
-      "max": 2,
+      "max": 1,
       "delay_write": false,
       "ammo": null,
       "needs_ammo": false,
@@ -2938,8 +2935,7 @@
       "affects_sets": true,
       "resend_sets": true,
       "types": {
-        "Mount": 1,
-        "Repel Mount": 1
+        "Mount": 1
       },
       "properties": {
         "burstmax": 1,
@@ -3147,15 +3143,15 @@
         "Turret": 1
       },
       "properties": {
-        "turretenergy": 1500,
         "turretrecharge": 220,
+        "turretship": 2,
         "turretmaxrange": 300,
         "turretweapon": 1,
         "turretlevel": 4,
         "turretdelay": 88,
         "turretminrange": 10,
-        "turretship": 2,
-        "turretalt": 1
+        "turretalt": 1,
+        "turretenergy": 1500
       },
       "events": [
         {
@@ -3482,16 +3478,17 @@
       "affects_sets": true,
       "resend_sets": true,
       "types": {
-        "???": 1
+        "Alien Tech": 1,
+        "Equipment": 1
       },
       "properties": {
-        "bulletdelaypct": 5,
+        "bombdamage": 30,
         "bulletdamageup": 2,
         "bombenergypct": 5,
         "bulletenergypct": 5,
         "bulletdamage": 5,
+        "bulletdelaypct": 5,
         "energy": -10,
-        "bombdamage": 30,
         "minedelaypct": 5,
         "mapzoom": -2,
         "multidelaypct": 5,
@@ -3505,16 +3502,10 @@
       },
       "events": [
         {
-          "event": "init",
-          "action": 4,
-          "data": 1000,
-          "message": "The Parasite has been applied."
-        },
-        {
-          "event": "kill",
-          "action": 6,
-          "data": 1,
-          "message": "The Parasite continues to sap your ship..."
+          "event": "datazero",
+          "action": 2,
+          "data": -1,
+          "message": ""
         },
         {
           "event": "datazero",
@@ -3523,10 +3514,16 @@
           "message": "The Parasite has lost its appetite! It left behind a Shell."
         },
         {
-          "event": "datazero",
-          "action": 2,
-          "data": -1,
-          "message": ""
+          "event": "kill",
+          "action": 6,
+          "data": 1,
+          "message": "The Parasite continues to sap your ship..."
+        },
+        {
+          "event": "init",
+          "action": 4,
+          "data": 1000,
+          "message": "The Parasite has been applied."
         }
       ],
       "categories": {
@@ -3537,92 +3534,9 @@
       ]
     },
     {
-      "name": "Nanomite Swarm",
-      "short_description": "Highly advanced nanobots.",
-      "long_description": "A huge number of destructive, self-replicating nanoscale robots.",
-      "buy_price": 54000,
-      "sell_price": 10800,
-      "exp_required": 4000,
-      "ships_allowed": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8
-      ],
-      "max": 1,
-      "delay_write": false,
-      "ammo": "Molecular Cover",
-      "needs_ammo": false,
-      "min_ammo": 0,
-      "affects_sets": true,
-      "resend_sets": true,
-      "types": {
-        "???": 1,
-        "Armor": 1
-      },
-      "properties": {
-        "bulletdamageup": 8,
-        "bombenergypct": 10,
-        "bulletenergypct": 10,
-        "bulletdamage": 6,
-        "minedelaypct": 10,
-        "bulletdelaypct": 10,
-        "multidelaypct": 10,
-        "bombdelaypct": 10,
-        "thrust": -4,
-        "explodepixels": 17,
-        "rotation": -3,
-        "mineenergypct": 10,
-        "speed": -4,
-        "multienergypct": 10
-      },
-      "events": [
-        {
-          "event": "init",
-          "action": 4,
-          "data": 1200,
-          "message": "The Nanomite swarm slowly covers your ship..."
-        },
-        {
-          "event": "kill",
-          "action": 6,
-          "data": 1,
-          "message": "The swarm grows as it absorbs ship debris..."
-        },
-        {
-          "event": "death",
-          "action": 5,
-          "data": 1,
-          "message": "The destruction of your ship weakens the swarm..."
-        },
-        {
-          "event": "datazero",
-          "action": 1,
-          "data": 1,
-          "message": "The Nanomite swarm has fully evolved into the Molecular Cover!"
-        },
-        {
-          "event": "datazero",
-          "action": 2,
-          "data": -1,
-          "message": ""
-        }
-      ],
-      "categories": {
-        "Alien Technology": 2
-      },
-      "stores": [
-        "Center Safe"
-      ]
-    },
-    {
       "name": "Antideath",
       "short_description": "Revives a ship where it died.",
-      "long_description": "Brings a ship back to life where it died. Takes two minutes to recharge.",
+      "long_description": "Occassionally regenerates a ship immediately after destruction",
       "buy_price": 250000,
       "sell_price": 187500,
       "exp_required": 6500,
@@ -3644,11 +3558,13 @@
       "affects_sets": true,
       "resend_sets": true,
       "types": {
-        "Alien Tech": 1
+        "Alien Tech": 1,
+        "Equipment": 1
       },
       "properties": {
-        "adcooldown": 12000,
-        "addelay": 500
+        "adcooldown": 3000,
+        "adchance": 5,
+        "addelay": 250
       },
       "events": [
         {
@@ -3672,186 +3588,6 @@
       ],
       "categories": {
         "Alien Technology": 3
-      },
-      "stores": [
-        "Center Safe"
-      ]
-    },
-    {
-      "name": "Baryon Injector",
-      "short_description": "[S] Ludicrous speed.",
-      "long_description": "Ludicrous speed.",
-      "buy_price": 3000000,
-      "sell_price": 1000000,
-      "exp_required": 16000,
-      "ships_allowed": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7
-      ],
-      "max": 1,
-      "delay_write": false,
-      "ammo": null,
-      "needs_ammo": false,
-      "min_ammo": 0,
-      "affects_sets": true,
-      "resend_sets": true,
-      "types": {
-        "Alien Tech": 1,
-        "Signature": 1,
-        "Sublight": 1
-      },
-      "properties": {
-        "maxspeed": 4,
-        "maxthrust": 3,
-        "rocketthrust": 6,
-        "rocketspeed": 375,
-        "thrust": 7,
-        "rotation": 10,
-        "afterburner": -25,
-        "speed": 7
-      },
-      "events": [],
-      "categories": {
-        "Alien Technology": 6
-      },
-      "stores": [
-        "Center Safe"
-      ]
-    },
-    {
-      "name": "Temporal Core",
-      "short_description": "[S] Unsurpassed reactor.",
-      "long_description": "Unsurpassed reactor.",
-      "buy_price": 3000000,
-      "sell_price": 1000000,
-      "exp_required": 16000,
-      "ships_allowed": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7
-      ],
-      "max": 1,
-      "delay_write": false,
-      "ammo": null,
-      "needs_ammo": false,
-      "min_ammo": 0,
-      "affects_sets": true,
-      "resend_sets": true,
-      "types": {
-        "Alien Tech": 1,
-        "Reactor": 1,
-        "Signature": 1
-      },
-      "properties": {
-        "afterburner": -25,
-        "bombenergypct": -5,
-        "bulletenergypct": -5,
-        "energy": 60,
-        "mineenergypct": -5,
-        "multienergypct": -5,
-        "recharge": 70
-      },
-      "events": [],
-      "categories": {
-        "Alien Technology": 7
-      },
-      "stores": [
-        "Center Safe"
-      ]
-    },
-    {
-      "name": "Adamantine Shell",
-      "short_description": "[S] Legendary armor.",
-      "long_description": "Legendary armor.",
-      "buy_price": 3000000,
-      "sell_price": 1000000,
-      "exp_required": 16000,
-      "ships_allowed": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7
-      ],
-      "max": 1,
-      "delay_write": false,
-      "ammo": null,
-      "needs_ammo": false,
-      "min_ammo": 0,
-      "affects_sets": true,
-      "resend_sets": true,
-      "types": {
-        "Alien Tech": 1,
-        "Armor": 1,
-        "Signature": 1
-      },
-      "properties": {
-        "bombdamage": -135,
-        "bulletdamageup": -21,
-        "bulletdamage": -42,
-        "ebombdamage": -50,
-        "ebombtime": -25,
-        "inactshrapdamage": -1,
-        "explodepixels": -2,
-        "burstdamage": -20
-      },
-      "events": [],
-      "categories": {
-        "Alien Technology": 8
-      },
-      "stores": [
-        "Center Safe"
-      ]
-    },
-    {
-      "name": "Supercomputer",
-      "short_description": "[S] Advanced technology.",
-      "long_description": "Using Dual-Quad-Quad Core processing, the Supercomputer is able to provide many sensors and disruptors at once.",
-      "buy_price": 3000000,
-      "sell_price": 1000000,
-      "exp_required": 16000,
-      "ships_allowed": [
-        3,
-        4,
-        7
-      ],
-      "max": 1,
-      "delay_write": false,
-      "ammo": null,
-      "needs_ammo": false,
-      "min_ammo": 0,
-      "affects_sets": true,
-      "resend_sets": true,
-      "types": {
-        "Alien Tech": 1,
-        "Sensor": 1,
-        "Signature": 1
-      },
-      "properties": {
-        "antiwarp": 1,
-        "stealthenergy": "=!0",
-        "cloak": 1,
-        "mapzoom": 4,
-        "stealth": 1,
-        "xradarenergy": "=!0",
-        "xradar": 1,
-        "antiwarpenergy": "=!0",
-        "cloakenergy": "=1"
-      },
-      "events": [],
-      "categories": {
-        "Alien Technology": 9
       },
       "stores": [
         "Center Safe"
@@ -4511,10 +4247,12 @@
       "affects_sets": true,
       "resend_sets": true,
       "types": {
-        "???": 1
+        "Alien Tech": 1,
+        "Equipment": 1
       },
       "properties": {
         "adcooldown": -500,
+        "mineenergypct": -5,
         "stealthenergy": -50,
         "bulletenergypct": -5,
         "xradarenergy": -50,
@@ -4522,60 +4260,12 @@
         "explodepixels": -2,
         "bombenergypct": -5,
         "jittertime": -22,
-        "mineenergypct": -5,
         "multienergypct": -5,
         "cloakenergy": -50
       },
       "events": [],
       "categories": {
         "Hidden": 1
-      },
-      "stores": []
-    },
-    {
-      "name": "Molecular Cover",
-      "short_description": "Reward for Nanomite.",
-      "long_description": "A passive Nanomite Swarm that absorbs the energy of incoming weapons to maintain itself.",
-      "buy_price": 0,
-      "sell_price": 20000,
-      "exp_required": 0,
-      "ships_allowed": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8
-      ],
-      "max": 1,
-      "delay_write": false,
-      "ammo": null,
-      "needs_ammo": false,
-      "min_ammo": 0,
-      "affects_sets": true,
-      "resend_sets": true,
-      "types": {
-        "???": 1,
-        "Armor": 1
-      },
-      "properties": {
-        "bombdamage": -20,
-        "adcooldown": -1000,
-        "bombenergypct": -10,
-        "bulletenergypct": -10,
-        "bulletdamage": -6,
-        "bulletdamageup": -2,
-        "explodepixels": -10,
-        "jittertime": -22,
-        "mineenergypct": -10,
-        "multienergypct": -10,
-        "recharge": 10
-      },
-      "events": [],
-      "categories": {
-        "Hidden": 2
       },
       "stores": []
     },
@@ -4741,7 +4431,7 @@
       },
       "events": [],
       "categories": {
-        "Hidden": 127
+        "Hidden": 125
       },
       "stores": [
         "Center Safe"
@@ -5453,42 +5143,6 @@
       ]
     },
     {
-      "name": "Test Item",
-      "short_description": "Test Item",
-      "long_description": "Test Item",
-      "buy_price": 0,
-      "sell_price": 1,
-      "exp_required": 99999,
-      "ships_allowed": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8
-      ],
-      "max": 99,
-      "delay_write": false,
-      "ammo": null,
-      "needs_ammo": false,
-      "min_ammo": 0,
-      "affects_sets": true,
-      "resend_sets": true,
-      "types": {
-        "Repel Mount": 1
-      },
-      "properties": {
-        "antiwarp": 2
-      },
-      "events": [],
-      "categories": {
-        "Hidden": 4
-      },
-      "stores": []
-    },
-    {
       "name": "Extra Signature",
       "short_description": "Remarkable capacity.",
       "long_description": "Grants an extra signature slot.",
@@ -5559,19 +5213,19 @@
       "events": [
         {
           "event": "burst",
-          "action": 12,
-          "data": 22,
+          "action": 1,
+          "data": 1,
           "message": ""
         },
         {
           "event": "burst",
-          "action": 1,
-          "data": 1,
+          "action": 12,
+          "data": 22,
           "message": ""
         }
       ],
       "categories": {
-        "Ammunition": 0
+        "Ammunition": 6
       },
       "stores": []
     },
@@ -5609,19 +5263,19 @@
       "events": [
         {
           "event": "repel",
-          "action": 1,
-          "data": 1,
+          "action": 12,
+          "data": 21,
           "message": ""
         },
         {
           "event": "repel",
-          "action": 12,
-          "data": 21,
+          "action": 1,
+          "data": 1,
           "message": ""
         }
       ],
       "categories": {
-        "Ammunition": 0
+        "Ammunition": 5
       },
       "stores": []
     },
@@ -5659,19 +5313,19 @@
       "events": [
         {
           "event": "brick",
-          "action": 1,
-          "data": 1,
+          "action": 12,
+          "data": 26,
           "message": ""
         },
         {
           "event": "brick",
-          "action": 12,
-          "data": 26,
+          "action": 1,
+          "data": 1,
           "message": ""
         }
       ],
       "categories": {
-        "Ammunition": 0
+        "Ammunition": 4
       },
       "stores": []
     },
@@ -5709,19 +5363,19 @@
       "events": [
         {
           "event": "decoy",
-          "action": 1,
-          "data": 1,
+          "action": 12,
+          "data": 23,
           "message": ""
         },
         {
           "event": "decoy",
-          "action": 12,
-          "data": 23,
+          "action": 1,
+          "data": 1,
           "message": ""
         }
       ],
       "categories": {
-        "Ammunition": 0
+        "Ammunition": 3
       },
       "stores": []
     },
@@ -5758,7 +5412,7 @@
       },
       "events": [],
       "categories": {
-        "Ammunition": 0
+        "Ammunition": 2
       },
       "stores": []
     },
@@ -5795,7 +5449,7 @@
       },
       "events": [],
       "categories": {
-        "Ammunition": 0
+        "Ammunition": 1
       },
       "stores": []
     },
@@ -5833,14 +5487,14 @@
       "events": [
         {
           "event": "thor",
-          "action": 1,
-          "data": 1,
+          "action": 12,
+          "data": 24,
           "message": ""
         },
         {
           "event": "thor",
-          "action": 12,
-          "data": 24,
+          "action": 1,
+          "data": 1,
           "message": ""
         }
       ],
@@ -5956,7 +5610,8 @@
         "Sensor": 1
       },
       "properties": {
-        "energyviewing": 1
+        "energyviewing": 1,
+        "recharge": -25
       },
       "events": [],
       "categories": {
@@ -5996,7 +5651,7 @@
       },
       "properties": {
         "exp_multiplier": -100,
-        "hsd_multiplier": 15
+        "hsd_multiplier": 25
       },
       "events": [],
       "categories": {
@@ -6037,8 +5692,8 @@
       "properties": {
         "maxspeed": -1,
         "maxthrust": -1,
-        "exp_multiplier": 35,
-        "hsd_multiplier": -75,
+        "hsd_multiplier": -90,
+        "exp_multiplier": 100,
         "thrust": -1,
         "rotation": -1,
         "speed": -1
@@ -6079,8 +5734,8 @@
         "Special": 1
       },
       "properties": {
-        "hsd_multiplier": -100,
-        "exp_multiplier": -100
+        "exp_multiplier": -100,
+        "hsd_multiplier": -100
       },
       "events": [],
       "categories": {
@@ -6112,11 +5767,11 @@
         "Summon": 1
       },
       "properties": {
-        "notsummonable": 1,
         "attachmask": -64,
-        "summonmask": 255,
+        "summon": 1,
+        "notsummonable": 1,
         "summonflags": 1,
-        "summon": 1
+        "summonmask": 255
       },
       "events": [],
       "categories": {
@@ -6229,7 +5884,7 @@
       ]
     },
     {
-      "name": "OverThruster",
+      "name": "Overthruster",
       "short_description": "High rotation drive.",
       "long_description": "Allows for rapid turns and maneuvers.",
       "buy_price": 16000,
