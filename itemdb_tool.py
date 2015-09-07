@@ -16,7 +16,7 @@ import re
 import sys
 
 
-DEBUG_OUTPUT = False
+DEBUG_OUTPUT = True
 
 LEGACY_CATEGORY_NAME = "Legacy Equipment"
 LEGACY_CATEGORY_DESCRIPTION = "Legacy equipment which is no longer available"
@@ -1031,7 +1031,7 @@ class ItemDB:
 
       for store in db_item["stores"]:
         if not safe_case_contains(item["stores"], store):
-          change_count += int(self.remove_item_from_store(store))
+          change_count += int(self.remove_item_from_store(item_id, store))
 
       self._commit_transaction()
 
