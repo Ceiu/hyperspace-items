@@ -4405,12 +4405,45 @@
         "Equipment": 1
       },
       "properties": {
+        "revival_module_enabled": 1,
         "revival_chance": 10
       },
       "events": [
       ],
       "categories": {
         "Alien Technology": 13
+      },
+      "stores": [
+        "Center Safe"
+      ]
+    },
+    {
+      "name": "RM-Booster",
+      "short_description": "Improves the output of the Revival Module",
+      "long_description": "Improves the output of the Revival Module, increasing its activation frequency",
+      "buy_price": 50000,
+      "sell_price": 40000,
+      "exp_required": 7500,
+      "ships_allowed": [
+        1, 2, 3, 4, 5, 6, 7, 8
+      ],
+      "max": 1,
+      "delay_write": false,
+      "ammo": null,
+      "needs_ammo": false,
+      "min_ammo": 0,
+      "affects_sets": false,
+      "resend_sets": false,
+      "types": {
+        "Equipment": 1
+      },
+      "properties": {
+        "revival_chance": 5
+      },
+      "events": [
+      ],
+      "categories": {
+        "Equipment": 8
       },
       "stores": [
         "Center Safe"
