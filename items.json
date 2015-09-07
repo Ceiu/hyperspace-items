@@ -3623,7 +3623,7 @@
       "name": "Antideath",
       "short_description": "Revives a ship where it died.",
       "long_description": "Brings a ship back to life where it died. Takes two minutes to recharge.",
-      "buy_price": 250000,
+      "buy_price": 0,
       "sell_price": 187500,
       "exp_required": 6500,
       "ships_allowed": [
@@ -4385,67 +4385,35 @@
     },
     {
       "name": "Revival Module",
-      "short_description": "Restocks your ship.",
-      "long_description": "Fully replenishes your ship on use. Can be used twice. In the right circumstances, can bypass certain death.",
-      "buy_price": 0,
-      "sell_price": 1000,
-      "exp_required": 5000,
+      "short_description": "Revives your ship immediately upon death",
+      "long_description": "Occasionally revives your ship immediately upon death; does not work while carrying flags",
+      "buy_price": 150000,
+      "sell_price": 100000,
+      "exp_required": 7500,
       "ships_allowed": [
-        3,
-        4,
-        7
+        1, 2, 3, 4, 5, 6, 7, 8
       ],
       "max": 1,
       "delay_write": false,
       "ammo": null,
       "needs_ammo": false,
       "min_ammo": 0,
-      "affects_sets": true,
-      "resend_sets": true,
+      "affects_sets": false,
+      "resend_sets": false,
       "types": {
-        "Brick": 1
+        "Alien Tech": 1,
+        "Equipment": 1
       },
       "properties": {
-        "brick": 2,
-        "dontbrick": 1
+        "revival_chance": 10
       },
       "events": [
-        {
-          "event": "brick",
-          "action": 8,
-          "data": 1,
-          "message": ""
-        },
-        {
-          "event": "brick",
-          "action": 3,
-          "data": -14,
-          "message": ""
-        },
-        {
-          "event": "datazero",
-          "action": 1,
-          "data": 1,
-          "message": "Revival Module has run out of charges!"
-        },
-        {
-          "event": "brick",
-          "action": 6,
-          "data": 1,
-          "message": "One charge used!"
-        },
-        {
-          "event": "init",
-          "action": 4,
-          "data": 2,
-          "message": "Revival Module has two charges!"
-        }
       ],
       "categories": {
-        "Consumables": 2
+        "Alien Technology": 13
       },
       "stores": [
-        "Ammo Depots"
+        "Center Safe"
       ]
     },
     {
