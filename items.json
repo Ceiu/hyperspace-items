@@ -3620,12 +3620,12 @@
       ]
     },
     {
-      "name": "Antideath",
-      "short_description": "Revives a ship where it died.",
-      "long_description": "Brings a ship back to life where it died. Takes two minutes to recharge.",
+      "name": "Antideath Refund",
+      "short_description": "Make sure you kept your receipt",
+      "long_description": "",
       "buy_price": 0,
-      "sell_price": 187500,
-      "exp_required": 6500,
+      "sell_price": 250000,
+      "exp_required": 0,
       "ships_allowed": [
         1,
         2,
@@ -3641,37 +3641,15 @@
       "ammo": null,
       "needs_ammo": false,
       "min_ammo": 0,
-      "affects_sets": true,
-      "resend_sets": true,
+      "affects_sets": false,
+      "resend_sets": false,
       "types": {
         "Alien Tech": 1
       },
       "properties": {
-        "adcooldown": 12000,
-        "addelay": 500
       },
-      "events": [
-        {
-          "event": "death",
-          "action": 9,
-          "data": 101,
-          "message": ""
-        },
-        {
-          "event": "pread",
-          "action": 0,
-          "data": 0,
-          "message": "Prepare to be resurrected..."
-        },
-        {
-          "event": "ad",
-          "action": 0,
-          "data": 0,
-          "message": "Resurrection complete!"
-        }
-      ],
+      "events": [],
       "categories": {
-        "Alien Technology": 3
       },
       "stores": [
         "Center Safe"
