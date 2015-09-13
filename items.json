@@ -935,7 +935,7 @@
         "initialbounty": -4,
         "mineenergy": "=140",
         "shraplevel": "=2",
-        "bombdelay": "=135"
+        "bombdelay": "=150"
       },
       "events": [],
       "categories": {
@@ -2799,9 +2799,9 @@
       "name": "Evasion Mount",
       "short_description": "Rocket boosters and repel.",
       "long_description": "Evasion Mount provides several rockets and a repel. Great for entering or exiting combat.",
-      "buy_price": 11000,
-      "sell_price": 8250,
-      "exp_required": 575,
+      "buy_price": 5000,
+      "sell_price": 3500,
+      "exp_required": 0,
       "ships_allowed": [
         1,
         2,
@@ -2841,9 +2841,9 @@
       "name": "Decoy System",
       "short_description": "Deception system.",
       "long_description": "Use decoys and portals to manipulate enemies.",
-      "buy_price": 15000,
-      "sell_price": 11250,
-      "exp_required": 900,
+      "buy_price": 5000,
+      "sell_price": 3500,
+      "exp_required": 0,
       "ships_allowed": [
         1,
         2,
@@ -4584,7 +4584,7 @@
       "name": "Cobalt Warhead Mk. 2",
       "short_description": "Devastating explosion",
       "long_description": "The bomb detonates at the site of death",
-      "buy_price": 165000,
+      "buy_price": 200000,
       "sell_price": 1,
       "exp_required": 15000,
       "ships_allowed": [
@@ -4603,7 +4603,9 @@
       "min_ammo": 0,
       "affects_sets": true,
       "resend_sets": true,
-      "types": {},
+      "types": {
+          "Alien Tech": 1
+        },
       "properties": {},
       "events": [
         {
@@ -6230,7 +6232,7 @@
       ]
     },
     {
-      "name": "OverThruster",
+      "name": "Overthruster",
       "short_description": "High rotation drive.",
       "long_description": "Allows for rapid turns and maneuvers.",
       "buy_price": 16000,

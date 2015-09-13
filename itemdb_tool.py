@@ -19,7 +19,7 @@ import sys
 DEBUG_OUTPUT = True
 
 LEGACY_CATEGORY_NAME = "Legacy Equipment"
-LEGACY_CATEGORY_DESCRIPTION = "Legacy equipment which is no longer available"
+LEGACY_CATEGORY_DESCRIPTION = "Legacy and refund equipment which is no longer available"
 
 
 # TODO:
