@@ -557,7 +557,8 @@
         "bomblevel": 1,
         "initialbounty": -1,
         "minedelay": "=150",
-        "bombdelay": "=150"
+        "bombdelay": "=150",
+        "mineenergy": 150
       },
       "events": [],
       "categories": {
