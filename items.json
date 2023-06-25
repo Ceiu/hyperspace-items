@@ -2720,8 +2720,7 @@
         "burstmax": 1,
         "repel": 1,
         "repelmax": 1,
-        "burst": 1,
-        "enterdelay": 300
+        "burst": 1
       },
       "events": [],
       "categories": {
@@ -2762,7 +2761,6 @@
         "thormax": 1,
         "burstmax": 1,
         "burst": 1,
-        "enterdelay": 300,
         "thor": 1
       },
       "events": [],
